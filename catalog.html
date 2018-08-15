@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Девайс</title>
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="logo">device</a>
+    <div class="header-panel">
+      <form class="header-panel-form">
+        <input type="search" placeholder="Поиск по сайту" class="search-field">
+        <input type="submit" value="Найти" class="search-btn">
+        <a href="#" class="site-link login">Валентин Петухов</a>
+        <a href="#" class="site-link logout">Выйти</a>
+        <a href="#" class="site-link compare">Сравнить</a>
+        <a href="#" class="site-link basket">Корзина</a>
+      </form>
+    </div>
+    <nav class="header-nav">
+      <ul class="main-menu">
+        <li class="menu-item"><a href="#" class="menu-link">каталог товаров</a>
+          <ul class="items-list">
+            <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+            <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+            <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+            <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+            <li class="catalog-item"><a href="#">Умные часы</a></li>
+            <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="#" class="menu-link">доставка</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">гарантия</a></li>
+        <li class="menu-item"><a href="#" class="menu-link">контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Моноподы для селфи</h2>
+    <section class="shop-sections">
+      <a href="#" class="shop-section">Главная</a>
+      <a href="#" class="shop-section">Каталог товаров</a>
+      <a href="#" class="shop-section">Моноподы для селфи</a>
+    </section>
+    <section class="filter">
+      <h3>фильтр:</h3>
+        <form method="post">
+          <section class="cost">
+            <labe for="cost-range">Стоимость</labe>
+            <input type="range"
+                   id="cost-range"
+                   name="cost-range"
+                   class="cost-range"
+                   min="0"
+                   max="">
+            <label>Цвет</label>
+          </section>
+          <section class="color">
+            <h4>Цвет</h4>
+            <div class="checkbox">
+              <input type="checkbox" id="black" name="black" value="black" checked>
+              <label>Чёрный</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="white" name="white" value="white">
+              <label>Белый</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="blue" name="blue" value="blue" checked>
+              <label>Синий</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="red" name="red" value="red" checked>
+              <label>Красный</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="pink" name="pink" value="pink">
+              <label>Розовый</label>
+            </div>
+          </section>
+          <section class="bluetooth">
+            <h4>Bluetooth</h4>
+            <input type="radio" id="bt-on"
+                   name="bt-on" value="bt-on">
+            <label for="bt-on">Есть</label>
+            <input type="radio" id="bt-off"
+                   name="bt-off" value="bt-off">
+            <label for="bt-off">Нет</label>
+          </section>
+          <button type="button">показать</button>
+        </form>
+    </section>
+  </main>
+  <footer class="site-header">
+    <div class="footer-top">
+      <a href="#" class="logo">device</a>
+      <a href="#" class="site-link login">Валентин Петухов</a>
+      <a href="#" class="site-link logout">Выйти</a>
+      <a href="#" class="site-link compare">Сравнить</a>
+      <a href="#" class="site-link basket">Корзина</a>
+    </div>
+    <div class="footer-mid">
+      <p>г. Москва, ул. Строителей, 15</p>
+      <a href="#" class="logo">device</a>
+      <a href="#" class="menu-link">доставка</a>
+      <a href="#" class="menu-link">гарантия</a>
+      <a href="#" class="menu-link">контакты</a>
+      <p>Тел.: +7 (495) 495-95-95</p>
+    </div>
+    <section class="footer-socials">
+      <a href="#" class="social fb"></a>
+      <a href="#" class="social inst"></a>
+      <a href="#" class="social tw"></a>
+      <a href="#" class="copyright"></a>
+    </section>
+  </footer>
+</body>
+</html>
