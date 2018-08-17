@@ -45,48 +45,42 @@
     <section class="filter">
       <h3>фильтр:</h3>
         <form method="post">
-          <section class="cost">
-            <labe for="cost-range">Стоимость</labe>
+          <fieldset>
+            <legend>Стоимость</legend>
             <input type="range"
                    id="cost-range"
                    name="cost-range"
                    class="cost-range"
                    min="0"
                    max="">
-            <label>Цвет</label>
-          </section>
-          <section class="color">
-            <h4>Цвет</h4>
-            <div class="checkbox">
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <label>
               <input type="checkbox" id="black" name="black" value="black" checked>
-              <label>Чёрный</label>
-            </div>
-            <div class="checkbox">
+              Чёрный</label>
+            <label>
               <input type="checkbox" id="white" name="white" value="white">
-              <label>Белый</label>
-            </div>
-            <div class="checkbox">
+              Белый</label>
+            <label>
               <input type="checkbox" id="blue" name="blue" value="blue" checked>
-              <label>Синий</label>
-            </div>
-            <div class="checkbox">
+              Синий</label>
+            <label>
               <input type="checkbox" id="red" name="red" value="red" checked>
-              <label>Красный</label>
-            </div>
-            <div class="checkbox">
+              Красный</label>
+            <label>
               <input type="checkbox" id="pink" name="pink" value="pink">
-              <label>Розовый</label>
-            </div>
-          </section>
-          <section class="bluetooth">
-            <h4>Bluetooth</h4>
+              Розовый</label>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
             <input type="radio" id="bt-on"
                    name="bt-on" value="bt-on">
             <label for="bt-on">Есть</label>
             <input type="radio" id="bt-off"
                    name="bt-off" value="bt-off">
             <label for="bt-off">Нет</label>
-          </section>
+          </fieldset>
           <button type="button">показать</button>
         </form>
     </section>
