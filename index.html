@@ -39,11 +39,11 @@
         <div class="slider-element">
           <img src="#" alt="монопод для селфи" height="" width="">
           <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
-          <!--<p class="el-number">01</p>-->
           <p class="slider-el-description">
             Самая длянная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
+          <a href="#" class="link-btn">подробнее</a>
           <table class="slider-char-table">
             <tbody>
             <tr>
@@ -64,11 +64,11 @@
         <div class="slider-element">
           <img src="#" alt="фитнес-браслет" vheight="" width="">
           <h2 class="slider-title">Худеем правильно!</h2>
-          <!--<p class="el-number">02</p>-->
           <p class="slider-el-description">
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
             и соблюдать диету.
           </p>
+          <a href="#" class="link-btn">подробнее</a>
           <table class="slider-char-table">
             <tbody>
               <tr>
@@ -85,11 +85,11 @@
         <div class="slider-element">
           <img src="#" alt="квадрокоптер" height="" width="">
           <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
-          <!--<p class="el-number">03</p>-->
           <p class="slider-el-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером,
             замаскированным под стандартную камеру.
           </p>
+          <a href="#" class="link-btn">подробнее</a>
           <table class="slider-char-table">
             <tbody>
               <tr>
@@ -106,9 +106,6 @@
           </table>
         </div>
         <div class="slider-switch">
-          <button class="details">
-            <a href="#">подробнее</a>
-          </button>
           <input id="el1" name="switch" type="radio">
           <input id="el2" name="switch" type="radio">
           <input id="el3" name="switch" type="radio">
@@ -117,34 +114,37 @@
           <label for="el3">03</label>
         </div>
       </div>
-      <section class="popular-items">
-        <h3><a href="#">Виртуальная реальность</a></h3>
-        <h3><a href="#">Моноподы для селфи</a></h3>
-        <h3><a href="#">Экшн-камеры</a></h3>
-        <h3><a href="#">Фитнес-браслеты</a></h3>
-        <h3><a href="#">Умные часы</a></h3>
-        <h3><a href="#">Квадрокоптеры</a></h3>
+      <section class="categories">
+        <a href="#">Виртуальная реальность</a>
+        <a href="#">Моноподы для селфи</a>
+        <a href="#">Экшн-камеры</a>
+        <a href="#">Фитнес-браслеты</a>
+        <a href="#">Умные часы</a>
+        <a href="#">Квадрокоптеры</a>
       </section>
       <section class="service">
         <dl>
-          <dt><h2>Доставка</h2></dt>
-          <dd>
+          <dt class="btn-link"><a href="#">Доставка</a></dt>
+          <dd class="service-desc">
+            <h2>Доставка</h2>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду
               совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
               на ваш этаж.
             </p>
           </dd>
-          <dt><h2>Гарантия</h2></dt>
-          <dd>
+          <dt class="btn-link"><a href="#">Гарантия</a></dt>
+          <dd class="service-desc">
+            <h2>Гарантия</h2>
             <p>
               Если из-за возгорания купленного у нас товара у вас сгорит
               дом — не переживайте, мы выдадим вам новый. Товар, не дом,
               конечно же.
             </p>
           </dd>
-          <dt><h2>Кредит</h2></dt>
-          <dd>
+          <dt class="btn-link"><a href="#">Кредит</a></dt>
+          <dd class="service-desc">
+            <h2>Кредит</h2>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут
               для вас наиболее выгодные условия кредита. Выгодные для нашего банка,
@@ -174,9 +174,9 @@
         <p>Мы можем доставить ваш товар в самые отдалённые точки
         России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="transport-list">
-          <li><h3>Деловые линии</h3></li>
-          <li><h3>Автотрейдинг</h3></li>
-          <li><h3>ЖелДорЭкспедиция</h3></li>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
         </ul>
         <a href="#" class="link-btn">подробнее о нас</a>
       </section>
@@ -184,41 +184,44 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="#" alt="карта проезда" height="" wdith="">
+        <a href="#" class="map-link">
+          <img src="#" alt="карта проезда" height="" wdith="">
+        </a>
         <a href="#" class="link-btn">напишите нам</a>
       </section>
     </main>
-    <footer class="site-header">
+    <footer class="site-footer">
       <div class="footer-top">
         <a href="#" class="logo">device</a>
-        <a href="#" class="site-link login">Войти</a>
+        <a href="#" class="site-link logout">Войти</a>
         <a href="#" class="site-link compare">Сравнить</a>
         <a href="#" class="site-link basket">Корзина</a>
       </div>
       <div class="footer-mid">
         <p>г. Москва, ул. Строителей, 15</p>
-        <a href="#" class="logo">device</a>
         <a href="#" class="menu-link">доставка</a>
         <a href="#" class="menu-link">гарантия</a>
         <a href="#" class="menu-link">контакты</a>
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
-      <section class="footer-socials">
-        <a href="#" class="social fb"></a>
-        <a href="#" class="social inst"></a>
-        <a href="#" class="social tw"></a>
-        <a href="#" class="copyright"></a>
-      </section>
+      <div class="footer-bottom">
+        <section class="social">
+          <a href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" class="social fb"></a>
+          <a href="https://www.instagram.com/htmlacademy/" target="_blank" class="social inst"></a>
+          <a href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" class="social tw"></a>
+        </section>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="copyright"></a>
+      </div>
     </footer>
     <section class="pop-up write-us">
       <form method="post">
         <label for="client-name">Ваше имя:</label>
         <input type="text" id="client-name" name="client-name" placeholder="Имя Фамилия">
-        <label for="email">Ваш e-mail</label>
+        <label for="email">Ваш e-mail:</label>
         <input type="email" id="email" name="email" placeholder="email@example.com">
         <label for="message">Текст письма:</label>
         <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-        <button type="submit" value="отправить"></button>
+        <button type="submit">отправить</button>
         <button type="button" class="close"></button>
       </form>
     </section>
