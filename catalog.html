@@ -20,7 +20,7 @@
     </div>
     <nav class="header-nav">
       <ul class="main-menu">
-        <li class="menu-item"><a href="#" class="menu-link">каталог товаров</a>
+        <li class="menu-item sub-menu"><a href="#" class="menu-link">каталог товаров</a>
           <ul class="items-list">
             <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
             <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
@@ -41,49 +41,40 @@
     <section class="shop-sections">
       <a href="#" class="shop-section">Главная</a>
       <a href="#" class="shop-section">Каталог товаров</a>
-      <a href="#" class="shop-section">Моноподы для селфи</a>
+      <a class="shop-section">Моноподы для селфи</a>
     </section>
     <section class="filter">
       <h3>фильтр:</h3>
-        <form method="post">
-          <fieldset>
-            <legend>Стоимость</legend>
-            <input type="range"
-                   id="cost-range"
-                   name="cost-range"
-                   class="cost-range"
-                   min="0"
-                   max="">
-          </fieldset>
-          <fieldset>
-            <legend>Цвет</legend>
-            <label>
-              <input type="checkbox" id="black" name="black" value="black" checked>
-              Чёрный</label>
-            <label>
-              <input type="checkbox" id="white" name="white" value="white">
-              Белый</label>
-            <label>
-              <input type="checkbox" id="blue" name="blue" value="blue" checked>
-              Синий</label>
-            <label>
-              <input type="checkbox" id="red" name="red" value="red" checked>
-              Красный</label>
-            <label>
-              <input type="checkbox" id="pink" name="pink" value="pink">
-              Розовый</label>
-          </fieldset>
-          <fieldset>
-            <legend>Bluetooth</legend>
-            <input type="radio" id="bt-on"
-                   name="bt" value="on">
-            <label for="bt-on">Есть</label>
-            <input type="radio" id="bt-off"
-                   name="bt" value="off">
-            <label for="bt-off">Нет</label>
-          </fieldset>
-          <button type="submit">показать</button>
-        </form>
+      <form method="post">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <div class="cost-range">
+            <div class="min-range-val"></div>
+            <div class="max-range-val"></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <input type="checkbox" id="check-black" name="black" value="black" checked>
+          <label for="check-black">Чёрный</label>
+          <input type="checkbox" id="check-white" name="white" value="white">
+          <label for="check-white">Белый</label>
+          <input type="checkbox" id="check-blue" name="blue" value="blue" checked>
+          <label for="check-blue">Синий</label>
+          <input type="checkbox" id="check-red" name="red" value="red" checked>
+          <label for="check-red">Красный</label>
+          <input type="checkbox" id="check-pink" name="pink" value="pink">
+          <label for="check-pink">Розовый</label>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <input type="radio" id="bt_on" name="bluetooth" value="on">
+          <label for="bt_on">Есть</label>
+          <input type="radio" id="bt_off" name="bluetooth" value="off">
+          <label for="bt_off">Нет</label>
+        </fieldset>
+        <button type="submit">показать</button>
+      </form>
     </section>
     <section class="sort-goods">
       <h3>сортировка:</h3>
