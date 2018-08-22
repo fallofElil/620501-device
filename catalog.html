@@ -6,11 +6,11 @@
 </head>
 <body>
   <header class="site-header">
-    <a href="#" class="logo">device</a>
+    <a href="index.html" class="logo">device</a>
     <div class="header-panel">
       <form method="get" action="https://echo.htmlacademy.ru/" class="header-panel-form">
         <label for="search-field"></label>
-        <input type="search" placeholder="Поиск по сайту" id="search-field" class="search-field">
+        <input type="search" placeholder="Поиск по сайту" id="search-field" class="search-field" aria-label="Поиск по сайту">
         <input type="submit" value="Найти" class="search-btn">
       </form>
       <a href="#" class="site-link login">Валентин Петухов</a>
@@ -20,7 +20,7 @@
     </div>
     <nav class="header-nav">
       <ul class="main-menu">
-        <li class="menu-item sub-menu"><a href="#" class="menu-link">каталог товаров</a>
+        <li class="menu-item sub-menu"><a href="catalog.html" class="menu-link">каталог товаров</a>
           <ul class="items-list">
             <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
             <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
@@ -39,8 +39,8 @@
   <main class="inner-content">
     <h2>Моноподы для селфи</h2>
     <section class="shop-sections">
-      <a href="#" class="shop-section">Главная</a>
-      <a href="#" class="shop-section">Каталог товаров</a>
+      <a href="index.html" class="shop-section">Главная</a>
+      <a href="catalog.html" class="shop-section">Каталог товаров</a>
       <a class="shop-section">Моноподы для селфи</a>
     </section>
     <section class="filter">
@@ -49,8 +49,8 @@
         <fieldset>
           <legend>Стоимость</legend>
           <div class="cost-range">
-            <div class="min-range-val"></div>
-            <div class="max-range-val"></div>
+            <div class="min-range-val" tabindex="0" aria-label="минимальная стоимость"></div>
+            <div class="max-range-val" tabindex="0" aria-label="максимальная стоимость"></div>
           </div>
         </fieldset>
         <fieldset>
@@ -81,8 +81,8 @@
       <a href="#" class="sort-attribute active-sort">По цене</a>
       <a href="#" class="sort-attribute">По типу</a>
       <a href="#" class="sort-attribute">По популярности</a>
-      <a href="#" class="sort-switch-btn up-switch active-switch"></a>
-      <a href="#" class="sort-switch-btn down-switch"></a>
+      <a href="#" class="sort-switch-btn up-switch active-switch" aria-label="по возрастанию"></a>
+      <a href="#" class="sort-switch-btn down-switch" aria-label="по убыванию"></a>
     </section>
     <section class="goods">
       <article class="good-item">
@@ -121,7 +121,7 @@
           <a href="#" class="link">Добавить к сравнению</a>
         </div>
       </article>
-      <nav class="goods-page-nav">
+      <nav class="goods-page-nav" aria-label="навигация по каталогу">
         <a href="#">назад</a>
         <a class="active-good-page">1</a>
         <a href="#">2</a>
@@ -132,7 +132,7 @@
   </main>
   <footer class="site-footer">
     <div class="footer-top">
-      <a href="#" class="logo">device</a>
+      <a href="index.html" class="logo">device</a>
       <a href="#" class="site-link login">Валентин Петухов</a>
       <a href="#" class="site-link logout">Выйти</a>
       <a href="#" class="site-link compare">Сравнить</a>
