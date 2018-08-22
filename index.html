@@ -35,6 +35,7 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <div class="slider-wrapper">
         <div class="slider-element">
           <img src="img/index/slider/slider-1.png" alt="монопод для селфи" width="384" height="486">
@@ -45,20 +46,16 @@
           </p>
           <a href="#" class="link-btn">подробнее</a>
           <table class="slider-char-table">
-            <!--<tbody>-->
             <tr>
               <td>8,5 м</td>
               <td>5 кг</td>
               <td>Карбон</td>
             </tr>
-            <!--<tbody>-->
-            <!--<thead>-->
               <tr>
                 <th>Длина палки</th>
                 <th>Вес палки</th>
                 <th>Материал</th>
               </tr>
-            <!--</thead>-->>
           </table>
         </div>
         <div class="slider-element">
@@ -70,16 +67,12 @@
           </p>
           <a href="#" class="link-btn">подробнее</a>
           <table class="slider-char-table">
-            <tbody>
-              <tr>
-                <td>48 часов</td>
-              </tr>
-            </tbody>
-            <thead>
+            <tr>
+              <td>48 часов</td>
+            </tr>
             <tr>
               <th>Без зарядки</th>
             </tr>
-            </thead>
           </table>
         </div>
         <div class="slider-element">
@@ -91,18 +84,14 @@
           </p>
           <a href="#" class="link-btn">подробнее</a>
           <table class="slider-char-table">
-            <tbody>
-              <tr>
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-            </tbody>
-            <thead>
+            <tr>
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
             <tr>
               <th>Дальность полёта</th>
               <th>Радиус поражения</th>
             </tr>
-            </thead>
           </table>
         </div>
         <div class="slider-switch">
@@ -115,6 +104,7 @@
         </div>
       </div>
       <section class="categories">
+        <h2 class="visually-hidden">Категории товаров</h2>
         <a href="#">Виртуальная реальность</a>
         <a href="#">Моноподы для селфи</a>
         <a href="#">Экшн-камеры</a>
@@ -123,10 +113,11 @@
         <a href="#">Квадрокоптеры</a>
       </section>
       <section class="service">
+        <h2 class="visually-hidden">Наши услуги</h2>
         <dl>
           <dt class="btn-link"><a href="#">Доставка</a></dt>
           <dd class="service-desc">
-            <h2>Доставка</h2>
+            <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду
               совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
@@ -135,7 +126,7 @@
           </dd>
           <dt class="btn-link"><a href="#">Гарантия</a></dt>
           <dd class="service-desc">
-            <h2>Гарантия</h2>
+            <h3>Гарантия</h3>
             <p>
               Если из-за возгорания купленного у нас товара у вас сгорит
               дом — не переживайте, мы выдадим вам новый. Товар, не дом,
@@ -144,7 +135,7 @@
           </dd>
           <dt class="btn-link"><a href="#">Кредит</a></dt>
           <dd class="service-desc">
-            <h2>Кредит</h2>
+            <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут
               для вас наиболее выгодные условия кредита. Выгодные для нашего банка,
@@ -154,16 +145,17 @@
         </dl>
       </section>
       <section class="brands">
-        <a href="#" class="brand-logo">
+        <h2 class="visually-hidden">Бренды</h2>
+        <a href="#" class="brand-logo" aria-label="товары от DJI">
           <img src="img/index/brands/dji.png" alt="DJI" width="260" height="100">
         </a>
-        <a href="#" class="brand-logo">
+        <a href="#" class="brand-logo" aria-label="товары от SP Gadgets">
           <img src="img/index/brands/sp-gadgets.png" alt="SP Gadgets" width="260" height="100">
         </a>
-        <a href="#" class="brand-logo">
+        <a href="#" class="brand-logo" aria-label="товары от GoPro">
           <img src="img/index/brands/gopro.png" alt="GoPro" width="260" height="100">
         </a>
-        <a href="#" class="brand-logo">
+        <a href="#" class="brand-logo" aria-label="товары от HTC Vive">
           <img src="img/index/brands/vive.png" alt="HTC Vive" width="260" height="100">
         </a>
       </section>
@@ -212,6 +204,7 @@
       </div>
       <div class="footer-bottom">
         <section class="social">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
           <a href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" class="social fb" aria-label="Наше сообщество в Facebook"></a>
           <a href="https://www.instagram.com/htmlacademy/" target="_blank" class="social inst" aria-label="Наши фотоотчёты в Instagram"></a>
           <a href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" class="social tw" aria-label="Читайте наши новости в Twitter"></a>
@@ -220,6 +213,7 @@
       </div>
     </footer>
     <section class="pop-up write-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form method="get" action="https://echo.htmlacademy.ru/">
         <label for="client-name">Ваше имя:</label>
         <input type="text" id="client-name" name="client-name" placeholder="Имя Фамилия">
@@ -231,6 +225,8 @@
         <button type="button" class="close-btn" aria-label="Закрыть форму">&times;</button>
       </form>
     </section>
-    <section class="pop-up map"></section>
+    <section class="pop-up map">
+      <button type="button" class="close-btn" aria-label="Закрыть форму">&times;</button>
+    </section>
   </body>
 </html>
