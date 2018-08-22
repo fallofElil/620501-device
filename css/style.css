@@ -1,21 +1,95 @@
 @font-face {
-  font-family: "Gilroy Light";
-  src: url("/fonts/gilroylight.woff2") format("woff2");
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Gilroy ExtraBold";
-  src: url("/fonts/gilroyextrabold.woff2") format("woff2");
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
-html,
 body {
-  padding: 0;
-  margin: 0;
-
-  font-family: "Gilroy ExtraBold", Tahoma, sans-serif;
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.logo {
+  font-size: 48px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.logo:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field::placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-field:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: none;
+  color: #000000;
+}
+
+.site-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.site-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item,
+.catalog-item {
+  list-style: none;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
