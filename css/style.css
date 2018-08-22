@@ -119,6 +119,16 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.service-desc h3 {
+  font-size: 47px;
+}
+
+.service-desc p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
