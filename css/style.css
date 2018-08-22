@@ -83,6 +83,30 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.slider-title {
+  font-size: 47px;
+}
+
+.slider-el-description {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.slider-char-table td {
+  font-size: 35px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.slider-char-table th {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
