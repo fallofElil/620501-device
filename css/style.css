@@ -211,6 +211,15 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.name-input::placeholder,
+.email-input::placeholder,
+.message-input::placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(70, 70, 70, 0.4);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
