@@ -22,6 +22,10 @@ body {
   color: #000000;
 }
 
+.site-header {
+  background-color: #f7e296;
+}
+
 .logo {
   font-size: 48px;
   color: #000000;
@@ -120,6 +124,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.service {
+  background-color: #e5e5e5;
+}
+
 .service-desc h3 {
   font-size: 47px;
 }
@@ -154,6 +162,53 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
+}
+
+.site-footer {
+  background-color: #464646;
+}
+
+.site-footer .logo {
+  color: #ffc600;
+}
+
+.site-footer .logo:hover {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.site-footer .logo:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
+.site-footer .site-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.site-footer .site-link:hover {
+  color: #ffffff;
+}
+
+.site-footer .site-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-mid p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.site-footer .menu-link {
+  color: #ffffff;
+}
+
+.site-footer .menu-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-footer .menu-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .visually-hidden {
