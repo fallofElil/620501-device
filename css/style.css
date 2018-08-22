@@ -103,6 +103,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
+  color: #464646;
 }
 
 .link-popular {
@@ -124,6 +125,32 @@ body {
 }
 
 .service-desc p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.about-us h2 {
+  font-size: 47px;
+}
+
+.about-us p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.transport-list {
+  font-size: 16px;
+}
+
+.contacts h2 {
+  font-size: 47px;
+}
+
+.contacts p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
