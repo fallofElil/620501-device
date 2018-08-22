@@ -8,7 +8,7 @@
     <header class="site-header">
       <a href="#" class="logo">device</a>
       <div class="header-panel">
-        <form class="header-panel-form">
+        <form method="get" action="https://echo.htmlacademy.ru/" class="header-panel-form">
           <input type="search" placeholder="Поиск по сайту" class="search-field">
           <input type="submit" value="Найти" class="search-btn">
         </form>
@@ -45,20 +45,20 @@
           </p>
           <a href="#" class="link-btn">подробнее</a>
           <table class="slider-char-table">
-            <tbody>
+            <!--<tbody>-->
             <tr>
               <td>8,5 м</td>
               <td>5 кг</td>
               <td>Карбон</td>
             </tr>
-            <tbody>
-            <thead>
+            <!--<tbody>-->
+            <!--<thead>-->
               <tr>
                 <th>Длина палки</th>
                 <th>Вес палки</th>
                 <th>Материал</th>
               </tr>
-            </thead>
+            <!--</thead>-->>
           </table>
         </div>
         <div class="slider-element">
@@ -127,16 +127,20 @@
           <dt class="btn-link"><a href="#">Доставка</a></dt>
           <dd class="service-desc">
             <h2>Доставка</h2>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            <p>
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду
               совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-              на ваш этаж.</p>
+              на ваш этаж.
+            </p>
           </dd>
           <dt class="btn-link"><a href="#">Гарантия</a></dt>
           <dd class="service-desc">
             <h2>Гарантия</h2>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит
+            <p>
+              Если из-за возгорания купленного у нас товара у вас сгорит
               дом — не переживайте, мы выдадим вам новый. Товар, не дом,
-              конечно же.</p>
+              конечно же.
+            </p>
           </dd>
           <dt class="btn-link"><a href="#">Кредит</a></dt>
           <dd class="service-desc">
@@ -182,8 +186,10 @@
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.</p>
+        <p>
+          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.
+        </p>
         <a href="#" class="map-link">
           <img src="img/index/map.png" alt="карта проезда" width="560" height="222">
         </a>
@@ -206,15 +212,15 @@
       </div>
       <div class="footer-bottom">
         <section class="social">
-          <a href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" class="social fb">Facebook</a>
-          <a href="https://www.instagram.com/htmlacademy/" target="_blank" class="social inst">Twitter</a>
-          <a href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" class="social tw">Instagram</a>
+          <a href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" class="social fb" aria-label="Наше сообщество в Facebook"></a>
+          <a href="https://www.instagram.com/htmlacademy/" target="_blank" class="social inst" aria-label="Наши фотоотчёты в Instagram"></a>
+          <a href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" class="social tw" aria-label="Читайте наши новости в Twitter"></a>
         </section>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="copyright"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="copyright" aria-label="Записывайтесь на интенсив по вёрстке!"></a>
       </div>
     </footer>
     <section class="pop-up write-us">
-      <form method="post">
+      <form method="get" action="https://echo.htmlacademy.ru/">
         <label for="client-name">Ваше имя:</label>
         <input type="text" id="client-name" name="client-name" placeholder="Имя Фамилия">
         <label for="email">Ваш e-mail:</label>
@@ -222,7 +228,7 @@
         <label for="message">Текст письма:</label>
         <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
         <button type="submit" class="link-btn">отправить</button>
-        <button type="button" class="close">закрыть</button>
+        <button type="button" class="close-btn" aria-label="Закрыть форму">&times;</button>
       </form>
     </section>
     <section class="pop-up map"></section>
