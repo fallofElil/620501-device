@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("/fonts/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url("/fonts/gilroyextrabold.woff2") format("woff2");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Gilroy ExtraBold", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
