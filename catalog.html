@@ -16,7 +16,7 @@
         <input type="search" placeholder="Поиск по сайту" id="search-field" class="search-field" aria-label="Поиск по сайту">
         <input type="submit" value="Найти" class="search-btn">
       </form>
-      <a href="#" class="site-link login">Валентин Петухов</a>
+      <p class="user-name">Валентин Петухов</p>
       <a href="#" class="site-link logout">Выйти</a>
       <a href="#" class="site-link compare">Сравнить</a>
       <a href="#" class="site-link basket">Корзина</a>
@@ -25,12 +25,12 @@
       <ul class="main-menu">
         <li class="menu-item sub-menu"><a href="catalog.html" class="menu-link">каталог товаров</a>
           <ul class="items-list">
-            <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-            <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
-            <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
-            <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
-            <li class="catalog-item"><a href="#">Умные часы</a></li>
-            <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+            <li class="catalog-item"><a href="#" class="site-link">Виртуальная реальность</a></li>
+            <li class="catalog-item"><a href="#" class="site-link">Моноподы для селфи</a></li>
+            <li class="catalog-item"><a href="#" class="site-link">Экшн-камеры</a></li>
+            <li class="catalog-item"><a href="#" class="site-link">Фитнес-браслеты</a></li>
+            <li class="catalog-item"><a href="#" class="site-link">Умные часы</a></li>
+            <li class="catalog-item"><a href="#" class="site-link">Квадрокоптеры</a></li>
           </ul>
         </li>
         <li class="menu-item"><a href="#" class="menu-link">доставка</a></li>
@@ -40,47 +40,47 @@
     </nav>
   </header>
   <main class="inner-content">
-    <h2>Моноподы для селфи</h2>
-    <section class="shop-sections">
-      <a href="index.html" class="shop-section">Главная</a>
-      <a href="catalog.html" class="shop-section">Каталог товаров</a>
-      <a class="shop-section">Моноподы для селфи</a>
+    <h1 class="page-title">Моноподы для селфи</h1>
+    <section class="bread-crumbs">
+      <a href="index.html" class="crumb">Главная</a>
+      <a href="catalog.html" class="crumb">Каталог товаров</a>
+      <a class="crumb">Моноподы для селфи</a>
     </section>
     <section class="filter">
-      <h3>фильтр:</h3>
+      <h2 class="section-title">фильтр:</h2>
       <form method="get" action="https://echo.htmlacademy.ru/">
         <fieldset>
-          <legend>Стоимость</legend>
+          <legend class="parameter-title">Стоимость</legend>
           <div class="cost-range">
             <div class="min-range-val" tabindex="0" aria-label="минимальная стоимость"></div>
             <div class="max-range-val" tabindex="0" aria-label="максимальная стоимость"></div>
           </div>
         </fieldset>
         <fieldset>
-          <legend>Цвет</legend>
-          <input type="checkbox" id="check-black" name="black" value="black" checked>
+          <legend class="parameter-title">Цвет</legend>
+          <input type="checkbox" id="check-black" name="black" value="black" class="color-check" checked>
           <label for="check-black">Чёрный</label>
-          <input type="checkbox" id="check-white" name="white" value="white">
+          <input type="checkbox" id="check-white" name="white" class="color-check" value="white">
           <label for="check-white">Белый</label>
-          <input type="checkbox" id="check-blue" name="blue" value="blue" checked>
+          <input type="checkbox" id="check-blue" name="blue" class="color-check" value="blue" checked>
           <label for="check-blue">Синий</label>
-          <input type="checkbox" id="check-red" name="red" value="red" checked>
+          <input type="checkbox" id="check-red" name="red" class="color-check" value="red" checked>
           <label for="check-red">Красный</label>
-          <input type="checkbox" id="check-pink" name="pink" value="pink">
+          <input type="checkbox" id="check-pink" name="pink" class="color-check" value="pink">
           <label for="check-pink">Розовый</label>
         </fieldset>
         <fieldset>
-          <legend>Bluetooth</legend>
-          <input type="radio" id="bt_on" name="bluetooth" value="on">
+          <legend class="parameter-title">Bluetooth</legend>
+          <input type="radio" id="bt_on" name="bluetooth" value="on" class="bt-radio">
           <label for="bt_on">Есть</label>
-          <input type="radio" id="bt_off" name="bluetooth" value="off">
+          <input type="radio" id="bt_off" name="bluetooth" value="off" class="bt-radio">
           <label for="bt_off">Нет</label>
         </fieldset>
         <button type="submit">показать</button>
       </form>
     </section>
     <section class="sort-goods">
-      <h3>сортировка:</h3>
+      <h2 class="section-title">сортировка:</h2>
       <a href="#" class="sort-attribute active-sort">По цене</a>
       <a href="#" class="sort-attribute">По типу</a>
       <a href="#" class="sort-attribute">По популярности</a>
@@ -90,8 +90,8 @@
     <section class="goods">
       <article class="good-item">
         <img src="img/catalog/goods/sst-common.png" alt="любительская селфи-палка" width="360" height="380">
-        <h4>Любительская селфи-палка</h4>
-        <p>500 руб</p>
+        <h3 class="good-name">Любительская селфи-палка</h3>
+        <p class="price">500 руб.</p>
         <div class="good-hover-actions">
           <a href="#" class="link-btn">в корзину</a>
           <a href="#" class="link">Добавить к сравнению</a>
@@ -99,8 +99,8 @@
       </article>
       <article class="good-item">
         <img src="img/catalog/goods/sst-professional.png" alt="профессиональная селфи-палка" width="360" height="380">
-        <h4>Профессиональная селфи-палка</h4>
-        <p>1&nbsp;500 руб</p>
+        <h3 class="good-name">Профессиональная селфи-палка</h3>
+        <p class="price">1&nbsp;500 руб.</p>
         <div class="good-hover-actions">
           <a href="#" class="link-btn">в корзину</a>
           <a href="#" class="link">Добавить к сравнению</a>
@@ -108,8 +108,8 @@
       </article>
       <article class="good-item">
         <img src="img/catalog/goods/sst-waterprot.png" alt="непотопляемая селфи-палка" width="360" height="380">
-        <h4>Непотопляемая селфи-палка</h4>
-        <p>2&nbsp;500 руб</p>
+        <h3 class="good-name">Непотопляемая селфи-палка</h3>
+        <p class="price">2&nbsp;500 руб.</p>
         <div class="good-hover-actions">
           <a href="#" class="link-btn">в корзину</a>
           <a href="#" class="link">Добавить к сравнению</a>
@@ -117,26 +117,26 @@
       </article>
       <article class="good-item new-item">
         <img src="img/catalog/goods/sst-followme.png" alt="селфи-палка &laquo;Следуй за мной&raquo;" width="360" height="380">
-        <h4>Селфи-палка &laquo;Следуй за мной&raquo;</h4>
-        <p>4&nbsp;900 руб</p>
+        <h3 class="good-name">Селфи-палка &laquo;Следуй за мной&raquo;</h3>
+        <p class="price">4&nbsp;900 руб.</p>
         <div class="good-hover-actions">
           <a href="#" class="link-btn">в корзину</a>
           <a href="#" class="link">Добавить к сравнению</a>
         </div>
       </article>
       <nav class="goods-page-nav" aria-label="навигация по каталогу">
-        <a href="#">назад</a>
-        <a class="active-good-page">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">вперёд</a>
+        <a href="#" class="nav-link">назад</a>
+        <a class="page-number active-page">1</a>
+        <a href="#" class="page-number">2</a>
+        <a href="#" class="page-number">3</a>
+        <a href="#" class="nav-link">вперёд</a>
       </nav>
     </section>
   </main>
   <footer class="site-footer">
     <div class="footer-top">
       <a href="index.html" class="logo">device</a>
-      <a href="#" class="site-link login">Валентин Петухов</a>
+      <p class="user-name">Валентин Петухов</p>
       <a href="#" class="site-link logout">Выйти</a>
       <a href="#" class="site-link compare">Сравнить</a>
       <a href="#" class="site-link basket">Корзина</a>

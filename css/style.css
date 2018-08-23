@@ -220,6 +220,113 @@ body {
   color: rgba(70, 70, 70, 0.4);
 }
 
+/*---Styles for Catalog page---*/
+.user-name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.logout {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-title {
+  font-size: 47px;
+}
+
+.crumb {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.parameter-title {
+
+}
+
+.color-check {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.bt-radio {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.sort-attribute {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.active-sort {
+  color: #000000;
+}
+
+.active-sort:hover {
+  cursor: default;
+}
+
+.price {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.link {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.link:hover {
+  color: #000000;
+}
+
+.link:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.page-number {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.active-page {
+  color: #000000;
+}
+
+.site-footer .user-name {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.site-footer .logout {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*---Global modifiers---*/
 .visually-hidden {
   position: absolute;
   width: 1px;
