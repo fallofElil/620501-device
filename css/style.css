@@ -18,12 +18,13 @@ body {
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.3em;
   background-color: #ffffff;
   color: #000000;
 }
 
 .site-header {
-  background-color: #f7e296;
+  background-color: rgba(240, 197, 46, 0.5);
 }
 
 .logo {
