@@ -212,7 +212,19 @@ body {
   background-color: #464646;
 }
 
+.footer-top {
+  display: flex;
+  justify-content: flex-end;
+  width: 1160px;
+  padding-top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+
 .site-footer .logo {
+  margin: 0;
+  margin-right: auto;
   color: #ffc600;
 }
 
@@ -225,6 +237,7 @@ body {
 }
 
 .site-footer .site-link {
+  margin-left: 45px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -236,15 +249,37 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-mid {
+  display: flex;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+}
+
 .footer-mid p {
+  margin: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
   color: #ffffff;
 }
 
+.footer-mid p:first-of-type {
+  margin-right: auto;
+}
+
+.footer-mid p:last-of-type {
+  margin-left: auto;
+}
+
 .site-footer .menu-link {
+  margin-right: 40px;
   color: #ffffff;
+}
+
+.site-footer .menu-link:last-of-type {
+  margin-right: 0;
 }
 
 .site-footer .menu-link:hover {
@@ -253,6 +288,17 @@ body {
 
 .site-footer .menu-link:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom {
+  display: flex;
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pop-up {
+  display: none;
 }
 
 .name-input::placeholder,
