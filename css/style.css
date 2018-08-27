@@ -25,10 +25,16 @@ body {
 }
 
 .site-header {
+  max-width: 1160px;
+  max-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 .logo {
+  display: inline-block;
+  margin-left: 60px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 48px;
   font-weight: 700;
@@ -43,6 +49,14 @@ body {
 
 .logo:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.header-panel {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 40px;
 }
 
 .search-field {
@@ -72,9 +86,30 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
 .menu-item,
 .catalog-item {
   list-style: none;
+}
+
+.menu-item {
+  margin-right: 45px;
+}
+
+.menu-item:first-child {
+  margin-right: auto;
+}
+
+.menu-item:last-child {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .menu-link {
@@ -94,6 +129,10 @@ body {
 
 .menu-link:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-submenu {
+  display: none;
 }
 
 .catalog-item {
