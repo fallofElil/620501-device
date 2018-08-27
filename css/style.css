@@ -15,10 +15,11 @@
 }
 
 body {
-  font-family: "Gilroy", Tahoma, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.3em;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2em;
+  letter-spacing: 0.01em;
   background-color: #ffffff;
   color: #000000;
 }
@@ -28,7 +29,9 @@ body {
 }
 
 .logo {
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 48px;
+  font-weight: 700;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
@@ -42,10 +45,13 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.search-field::placeholder {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
+.search-field {
+  background-color: #f7e296;
+  border: none;
   font-weight: 300;
+}
+
+.search-field::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -54,9 +60,6 @@ body {
 }
 
 .site-link {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
   text-decoration: none;
   color: #000000;
 }
@@ -75,6 +78,11 @@ body {
 }
 
 .menu-link {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.3em;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
@@ -88,31 +96,35 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.slider-title {
-  font-size: 47px;
+.catalog-item {
+  line-height: 2.4em;
 }
 
-.slider-el-description {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  text-transform: none;
+.slider-title {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 47px;
+  font-weight: 700;
 }
 
 .slider-char-table td {
-  font-size: 35px;
-  font-weight: 300;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.3em;
 }
 
 .slider-char-table th {
-  font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   font-weight: 300;
+  line-height: 1.5em;
   color: #464646;
 }
 
 .link-popular {
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3em;
   text-decoration: none;
   color: #000000;
 }
@@ -130,39 +142,31 @@ body {
 }
 
 .service-desc h3 {
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
+  font-weight: 700;
 }
 
 .service-desc p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
   color: #464646;
 }
 
-.about-us h2 {
+.about-us h2,
+.contacts h2{
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
+  font-weight: 700;
+  line-height: 1em;
 }
 
-.about-us p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
+.about-us p,
+.contacts p{
+  letter-spacing: 0;
   color: #464646;
 }
 
 .transport-list {
   font-size: 16px;
-}
-
-.contacts h2 {
-  font-size: 47px;
-}
-
-.contacts p {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
 }
 
 .site-footer {
