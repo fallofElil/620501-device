@@ -169,6 +169,29 @@ body {
   font-weight: 700;
 }
 
+.link-btn {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.link-btn:hover {
+  background-color: #f0c52e;
+  padding-left: 44px;
+  padding-right: 44px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.link-btn:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .slider-char-table td {
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 36px;
@@ -395,6 +418,44 @@ body {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 23px;
+}
+
+.social-icon:last-of-type {
+  margin-right: 0;
+}
+
+.social-icon:hover path {
+  fill: #b5b5b5;
+}
+
+.social-icon:active path {
+  fill: #595959;
+}
+
+.copyright {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.copyright:hover path {
+  fill: #b5931c;
+}
+
+.copyright:active path {
+  fill: #7e6d31;
 }
 
 .pop-up {
