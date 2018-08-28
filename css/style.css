@@ -331,7 +331,9 @@ body {
 }
 
 .link-popular {
+  position: relative;
   width: 160px;
+  padding-top: 200px;
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Gilroy", Tahoma, sans-serif;
@@ -342,12 +344,61 @@ body {
   color: #000000;
 }
 
-.link-popular:hover {
+.link-popular::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+}
 
+.link-popular::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .link-popular:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.link-popular:hover::before {
+  background-color: #f0c52e;
+}
+
+.link-popular:active::after {
+  opacity: 0.3;
+}
+
+.link-popular:first-of-type::after {
+  background-image: url("../img/svg/popular-1.svg");
+}
+
+.link-popular:nth-of-type(2)::after {
+  top: 20px;
+  background-image: url("../img/svg/popular-2.svg");
+}
+
+.link-popular:nth-of-type(3)::after {
+  background-image: url("../img/svg/popular-3.svg");
+}
+
+.link-popular:nth-of-type(4)::after {
+  background-image: url("../img/svg/popular-4.svg");
+}
+
+.link-popular:nth-of-type(5)::after {
+  background-image: url("../img/svg/popular-5.svg");
+}
+
+.link-popular:last-of-type::after {
+  background-image: url("../img/svg/popular-6.svg");
 }
 
 .service {
