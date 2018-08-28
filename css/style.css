@@ -15,6 +15,9 @@
 }
 
 body {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -132,11 +135,32 @@ body {
 }
 
 .catalog-submenu {
+  position: absolute;
   display: none;
 }
 
 .catalog-item {
   line-height: 2.4em;
+}
+
+.slider-wrapper {
+  width: 1160px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-element {
+  display: flex;
+  position: relative;
+}
+
+.img-wrapper {
+  width: 560px;
+}
+
+.description-wrapper {
+  display: inline-block;
 }
 
 .slider-title {
@@ -159,7 +183,21 @@ body {
   color: #464646;
 }
 
+.slider-switch {
+  position: absolute;
+  top: 350px;
+  left: 1300px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+}
+
 .link-popular {
+  width: 160px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -177,8 +215,58 @@ body {
 }
 
 .service {
+  height: 288px;
+  margin-bottom: 100px;
   background-color: #e5e5e5;
 }
+
+.service dl {
+  position: relative;
+}
+
+.service-desc {
+  margin-left: 420px;
+  width: 500px;
+}
+
+.service-name {
+  position: absolute;
+  width: 280px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.service-name:first-of-type {
+  top: -15px;
+}
+
+.service-name:nth-of-type(2) {
+  top: 41px;
+}
+
+.service-name:last-of-type {
+  top: 99px;
+}
+
+.service-link {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3em;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/*---затычка---*/
+.act-srv {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #000000;
+  color: #f7e184;
+}
+/*------------*/
 
 .service-desc h3 {
   font-family: "Gilroy", Tahoma, sans-serif;
@@ -188,6 +276,18 @@ body {
 
 .service-desc p {
   color: #464646;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 93px;
+}
+
+.about-us,
+.contacts {
+  display: inline-block;
+  width: 580px;
 }
 
 .about-us h2,

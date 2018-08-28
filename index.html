@@ -41,28 +41,34 @@
       <h1 class="visually-hidden">Интернет-магазин Device</h1>
       <div class="slider-wrapper">
         <div class="slider-element">
-          <img src="img/index/slider/slider-1.png" alt="монопод для селфи" width="384" height="486">
-          <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
-          <p class="slider-el-description">
-            Самая длянная палка для селфи доступна в нашем магазине.
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-          </p>
-          <a href="#" class="link-btn">подробнее</a>
-          <table class="slider-char-table">
-            <tr>
-              <td>8,5 м</td>
-              <td>5 кг</td>
-              <td>Карбон</td>
-            </tr>
+          <div class="img-wrapper">
+            <img src="img/index/slider/slider-1.png" alt="монопод для селфи" width="384" height="486">
+          </div>
+          <div class="description-wrapper">
+            <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+            <p class="slider-el-description">
+              Самая длянная палка для селфи доступна в нашем магазине.
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <a href="#" class="link-btn">подробнее</a>
+            <table class="slider-char-table">
               <tr>
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
               </tr>
-          </table>
+                <tr>
+                  <th>Длина палки</th>
+                  <th>Вес палки</th>
+                  <th>Материал</th>
+                </tr>
+            </table>
+          </div>
         </div>
-        <div class="slider-element">
-          <img src="img/index/slider/slider-2.png" alt="фитнес-браслет" width="345" height="485">
+        <div class="slider-element visually-hidden">
+          <div class="img-wrapper">
+            <img src="img/index/slider/slider-2.png" alt="фитнес-браслет" width="345" height="485">
+          </div>
           <h2 class="slider-title">Худеем правильно!</h2>
           <p class="slider-el-description">
             Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
@@ -78,8 +84,10 @@
             </tr>
           </table>
         </div>
-        <div class="slider-element">
-          <img src="img/index/slider/slider-3.png" alt="квадрокоптер" width="526" height="334">
+        <div class="slider-element visually-hidden">
+          <div class="img-wrapper">
+            <img src="img/index/slider/slider-3.png" alt="квадрокоптер" width="526" height="334">
+          </div>
           <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
           <p class="slider-el-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером,
@@ -118,8 +126,8 @@
       <section class="service">
         <h2 class="visually-hidden">Наши услуги</h2>
         <dl>
-          <dt><a href="#" class="service-link">Доставка</a></dt>
-          <dd class="service-desc">
+          <dt class="service-name"><a href="#" class="service-link act-srv">Доставка</a></dt>
+          <dd class="service-desc current-service">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -127,8 +135,8 @@
               на ваш этаж.
             </p>
           </dd>
-          <dt class="btn-link"><a href="#" class="service-link">Гарантия</a></dt>
-          <dd class="service-desc">
+          <dt class="service-name"><a href="#" class="service-link act-srv">Гарантия</a></dt>
+          <dd class="service-desc visually-hidden">
             <h3>Гарантия</h3>
             <p>
               Если из-за возгорания купленного у нас товара у вас сгорит
@@ -136,8 +144,8 @@
               конечно же.
             </p>
           </dd>
-          <dt class="btn-link"><a href="#" class="service-link">Кредит</a></dt>
-          <dd class="service-desc">
+          <dt class="service-name"><a href="#" class="service-link act-srv">Кредит</a></dt>
+          <dd class="service-desc visually-hidden">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут
