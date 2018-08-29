@@ -12,11 +12,11 @@
       <a href="index.html" class="logo">device</a>
       <div class="header-panel">
         <form method="get" action="https://echo.htmlacademy.ru/" class="header-panel-form">
-          <label for="search-field" class="search-label">
+          <!--<label for="search-field" class="search-label">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
               <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0 0 14 7a7 7 0 1 0-7 7 6.963 6.963 0 0 0 4.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 0 0 1-1 .93.93 0 0 0-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
             </svg>
-          </label>
+          </label>-->
           <input type="search" placeholder="Поиск по сайту" name="search-text" id="search-field" class="search-field" aria-label="Поиск по сайту">
           <input type="submit" value="Найти" class="search-btn">
         </form>
@@ -50,7 +50,7 @@
             <img src="img/index/slider/slider-1.png" alt="монопод для селфи" width="384" height="486">
           </div>
           <div class="description-wrapper">
-            <h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+            <h2 class="slider-title">Делай селфи, <br>как Бен Стиллер!</h2>
             <p class="slider-el-description">
               Самая длянная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -98,7 +98,7 @@
             Этот обычный, на первый взгляд, квадрокоптер оснащён мощным лазером,
             замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="link-btn">подробнее</a>
+          <a href="#" class="link-btn slider-link">подробнее</a>
           <table class="slider-char-table">
             <tr>
               <td>800 м</td>
@@ -122,7 +122,7 @@
       <section class="categories">
         <h2 class="visually-hidden">Популярные товаров</h2>
         <a href="#" class="link-popular">Виртуальная реальность</a>
-        <a href="#" class="link-popular">Моноподы для селфи</a>
+        <a href="#" class="link-popular">Моноподы&nbsp;для селфи</a>
         <a href="#" class="link-popular">Экшн-камеры</a>
         <a href="#" class="link-popular">Фитнес-браслеты</a>
         <a href="#" class="link-popular">Умные часы</a>
@@ -175,33 +175,35 @@
           <img src="img/index/brands/vive.png" alt="HTC Vive" width="260" height="100">
         </a>
       </section>
-      <section class="about-us">
-        <h2>О нас</h2>
-        <p>
-          Огромный выбор гаджетов не оставит равнодушным гика,
-          который есть в каждом из нас.
-        </p>
-        <p>
-          Мы можем доставить ваш товар в самые отдалённые точки
-          России! DEVICE работает со многими транспортными компаниями:
-        </p>
-        <ul class="transport-list">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="link-btn">подробнее о нас</a>
-      </section>
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <p>
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.
-        </p>
-        <a href="#" class="map-link">
-          <img src="img/index/map.png" alt="карта проезда" width="560" height="222">
-        </a>
-        <a href="#" class="link-btn">напишите нам</a>
+      <section class="info-wrapper">
+        <section class="about-us">
+          <h2>О нас</h2>
+          <p>
+            Огромный выбор гаджетов не оставит равнодушным гика,
+            который есть в каждом из нас.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдалённые точки
+            России! DEVICE работает со многими транспортными компаниями:
+          </p>
+          <ul class="transport-list">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="link-btn">подробнее о нас</a>
+        </section>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+            проверить работоспособность покупки. Всякое бывает.
+          </p>
+          <a href="#" class="map-link">
+            <img src="img/index/map.png" alt="карта проезда" width="560" height="222">
+          </a>
+          <a href="#" class="link-btn">напишите нам</a>
+        </section>
       </section>
     </main>
     <footer class="site-footer">
@@ -213,9 +215,11 @@
       </div>
       <div class="footer-mid">
         <p>г. Москва, ул. Строителей, 15</p>
-        <a href="#" class="menu-link">доставка</a>
-        <a href="#" class="menu-link">гарантия</a>
-        <a href="#" class="menu-link">контакты</a>
+        <nav class="footer-menu">
+          <a href="#" class="menu-link">доставка</a>
+          <a href="#" class="menu-link">гарантия</a>
+          <a href="#" class="menu-link">контакты</a>
+        </nav>
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
       <div class="footer-bottom">
