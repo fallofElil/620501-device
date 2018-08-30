@@ -31,12 +31,16 @@ body {
   height: 190px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
   background-color: rgba(240, 197, 46, 0.5);
 }
 
 .logo {
+  position: relative;
+  top: -15px;
   display: inline-block;
   margin-left: 60px;
+  margin-bottom: 30px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 48px;
   font-weight: 700;
@@ -55,7 +59,6 @@ body {
 
 .header-panel {
   display: flex;
-  justify-content: space-between;
   margin-left: 60px;
   margin-right: 60px;
   margin-bottom: 40px;
@@ -115,6 +118,7 @@ body {
 
 .login {
   padding-left: 27px;
+  margin-left: auto;
 }
 
 .login::before {
@@ -137,6 +141,7 @@ body {
 
 .compare {
   padding-left: 10px;
+  margin-left: 220px;
 }
 
 .compare::before {
@@ -159,6 +164,7 @@ body {
 
 .cart {
   padding-left: 12px;
+  margin-left: 45px;
 }
 
 .cart::before {
@@ -245,12 +251,44 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sub-menu:hover .catalog-submenu {
+  display: flex;
+}
+
 .catalog-submenu {
   position: absolute;
+  left: -60px;
   display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 580px;
+  height: 130px;
+  padding-left: 60px;
+  padding-right: 520px;
+  padding-top: 35px;
+  background-color: #f7e296;
+  z-index: 1;
+}
+
+.catalog-item:first-child,
+.catalog-item:nth-child(4) {
+  width: 220px;
+}
+
+.catalog-item:nth-child(6) {
+  width: 90%;
+}
+
+.catalog-item:nth-child(2),
+.catalog-item:nth-child(3),
+.catalog-item:nth-child(5) {
+  width: 180px;
 }
 
 .catalog-item {
+  padding: 0;
   line-height: 2.4em;
 }
 
@@ -259,15 +297,12 @@ body {
   height: 500px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 95px;
 }
 
 .slider-element {
   display: flex;
   position: relative;
-}
-
-body * {
-  outline: 1px solid red;
 }
 
 .img-wrapper {
