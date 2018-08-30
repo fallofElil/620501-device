@@ -938,20 +938,23 @@ body {
 .sort-goods {
   display: flex;
   align-items: flex-start;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 22px;
   background-color: #efefef;;
 }
 
 .sort-title {
   padding-left: 74px;
   padding-right: 52px;
+  margin: 0;
 }
 
 .sort-attribute {
+  padding-top: 2px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
+  line-height: 1.285em;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3);
 }
