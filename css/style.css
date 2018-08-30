@@ -836,6 +836,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.inner-content * {
+  outline: 1px solid darkblue;
+}
+
 .page-title {
   width: 1160px;
   margin: 40px auto 30px;
@@ -846,6 +850,15 @@ body {
   line-height: 1em;
 }
 
+.bread-crumbs {
+  display: flex;
+  width: 1160px;
+  padding-left: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
 .crumb {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -854,9 +867,51 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.grid-wrapper {
+  display: flex;
+}
+
+.filter {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  background-color: #efefef;
+}
+
+.filter fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .section-title {
+  font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.filter-title {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0;
+  background-color: #dcdcdc;
+  text-align: right;
+}
+
+.filter-title span {
+  padding-right: 135px;
+}
+
+.filter-form {
+  padding-left: 60px;
+  padding-right: 70px;
+  margin-left: auto;
 }
 
 .parameter-title {
@@ -875,6 +930,24 @@ body {
   font-weight: 300;
 }
 
+.goods-area {
+  flex-grow: 3;
+  margin-right: auto;
+}
+
+.sort-goods {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #efefef;;
+}
+
+.sort-title {
+  padding-left: 74px;
+  padding-right: 52px;
+}
+
 .sort-attribute {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -889,6 +962,14 @@ body {
 
 .active-sort:hover {
   cursor: default;
+}
+
+.goods {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 75px;
+  width: 760px;
 }
 
 .price {
@@ -914,6 +995,35 @@ body {
   color: rgba(0, 0, 0, 0.2);
 }
 
+.goods-page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 760px;
+  height: 70px;
+  margin-top: 38px;
+  margin-bottom: 77px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
+  background-color: #efefef;
+}
+
+.back {
+  padding-left: 30px;
+}
+
+.forward {
+  padding-right: 30px;
+}
+
+.nav-link,
+.page-numbers {
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
 .nav-link {
   text-decoration: none;
   text-transform: uppercase;
@@ -923,6 +1033,19 @@ body {
 .page-number {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.page-number:first-of-type {
+  margin-left: auto;
+}
+
+.page-number:nth-of-type(2) {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.page-number:last-of-type {
+  margin-right: auto;
 }
 
 .active-page {
