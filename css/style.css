@@ -392,6 +392,7 @@ body {
   height: 240px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
   justify-content: space-between;
 }
 
@@ -474,40 +475,53 @@ body {
   background-image: url("../img/svg/popular-6.svg");
 }
 
-.service {
-  height: 390px;
+/*.service * {
+  outline: 1px solid orangered;
+}*/
 
+.service {
+  /*outline: 1px solid green;*/
+  height: 390px;
   margin-bottom: 100px;
-  background: linear-gradient(to bottom, #ffffff 25.64%, #e5e5e5 74.36%);
+  background-color: #e5e5e5;
+  /*background: linear-gradient(to bottom, #ffffff 25.64%, #e5e5e5 74.36%);*/
   /*#ffffff 25.64%, #e5e5e5 74.36%*/
 }
 
 .service dl {
   position: relative;
+  width: 1160px;
+  height: 320px;
+  /*padding-top: 80px;*/
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-desc {
-  margin-left: 420px;
+  padding-left: 120px;
+  padding-top: 80px;
+  padding-bottom: 85px;
+  margin-left: 280px;
   width: 500px;
+  height: 155px;
+  border-left: 5px solid #000000;
 }
 
 .service-name {
   position: absolute;
   width: 280px;
-  margin-left: 20px;
-  margin-bottom: 25px;
 }
 
 .service-name:first-of-type {
-  top: -15px;
+  top: 80px;
 }
 
 .service-name:nth-of-type(2) {
-  top: 41px;
+  top: 145px;
 }
 
 .service-name:last-of-type {
-  top: 99px;
+  top: 210px;
 }
 
 .service-link {
@@ -534,6 +548,8 @@ body {
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .service-desc p {
