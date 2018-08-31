@@ -346,6 +346,7 @@ body {
 }
 
 .link-btn {
+  position: relative;
   padding: 8px 44px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
@@ -364,6 +365,18 @@ body {
 
 .link-btn:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.link-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  height: 8px;
+  background-color: #f0c52e;
+  width: 100%;
+  z-index: -1;
 }
 
 .slider-char-table {
