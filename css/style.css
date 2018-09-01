@@ -593,6 +593,16 @@ body {
   margin-bottom: 93px;
 }
 
+.brand-link img {
+  opacity: 0.2;
+  filter: grayscale(1);
+}
+
+.brand-link img:hover {
+  opacity: 1;
+  filter: none;
+}
+
 .info-wrapper {
   width: 1160px;
   display: flex;
