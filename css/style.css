@@ -425,22 +425,12 @@ body {
   position: relative;
   width: 160px;
   padding-top: 200px;
-  margin-left: 20px;
-  margin-right: 20px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3em;
   text-decoration: none;
   color: #000000;
-}
-
-.link-popular:first-of-type {
-  margin-left: 0;
-}
-
-.link-popular:last-of-type {
-  margin-right: 0;
 }
 
 .link-popular::before {
@@ -475,28 +465,28 @@ body {
   opacity: 0.3;
 }
 
-.link-popular:first-of-type::after {
+.popular-vr::after {
   background-image: url("../img/svg/popular-1.svg");
 }
 
-.link-popular:nth-of-type(2)::after {
+.popular-selfie::after {
   top: 20px;
   background-image: url("../img/svg/popular-2.svg");
 }
 
-.link-popular:nth-of-type(3)::after {
+.popular-action::after {
   background-image: url("../img/svg/popular-3.svg");
 }
 
-.link-popular:nth-of-type(4)::after {
+.popular-fitness::after {
   background-image: url("../img/svg/popular-4.svg");
 }
 
-.link-popular:nth-of-type(5)::after {
+.popular-smartw::after {
   background-image: url("../img/svg/popular-5.svg");
 }
 
-.link-popular:last-of-type::after {
+.popular-quadrocopt::after {
   background-image: url("../img/svg/popular-6.svg");
 }
 
