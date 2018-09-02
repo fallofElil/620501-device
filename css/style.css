@@ -892,11 +892,21 @@ body {
 }
 
 .crumb {
+  padding-right: 20px;
+  margin-right: 20px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3);
+  background-image: url("../img/svg/nav-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 13px;
+}
+
+.crumb:last-child {
+  background-image: none;
 }
 
 .grid-wrapper {
@@ -972,6 +982,7 @@ body {
   align-items: flex-start;
   padding-top: 25px;
   padding-bottom: 22px;
+  margin-bottom: 70px;
   background-color: #efefef;;
 }
 
@@ -1031,6 +1042,16 @@ body {
 
 .item-link:hover::after {
   display: block;
+}
+
+.item-info {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 360px;
+}
+
+.good-name {
+  width: 260px;
 }
 
 .good-hover-actions {
