@@ -620,10 +620,24 @@ body {
 
 .about-us h2,
 .contacts h2{
+  position: relative;
+  padding-top: 55px;
+  margin: 0;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   font-weight: 700;
   line-height: 1em;
+}
+
+.about-us h2::before,
+.contacts h2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 8px;
+  background-color: #000000;
 }
 
 .about-us p,
