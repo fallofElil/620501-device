@@ -694,58 +694,31 @@ body {
   color: rgba(255, 198, 0, 0.3);
 }
 
-.site-footer .site-link {
-  position: relative;
+.footer-link {
   margin-left: 45px;
   color: rgba(255, 255, 255, 0.7);
-  background-image: none;
 }
 
-.site-footer .site-link:hover {
+.footer-link:hover {
   color: #ffffff;
+  opacity: 1;
 }
 
-.site-footer .site-link:active {
+.footer-link:active {
   color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
 }
 
-.site-footer .login::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 13px;
-  height: 12px;
+.footer-link svg {
+  fill: #ffc600;
 }
 
-.site-footer .compare::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
+.footer-link:hover svg {
+  fill: rgba(255, 198, 0, 0.6);;
 }
 
-.site-footer .cart::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 12px;
-  height: 12px;
-}
-
-.site-footer .login:hover::before,
-.site-footer .compare:hover::before,
-.site-footer .cart:hover::before {
-  opacity: 0.6;
-}
-
-.site-footer .login:active::before,
-.site-footer .compare:active::before,
-.site-footer .cart:active::before {
-  opacity: 0.3;
+.footer-link:active svg {
+  fill: rgba(255, 198, 0, 0.3);;
 }
 
 .footer-mid {
