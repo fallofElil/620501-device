@@ -791,11 +791,15 @@ body {
   height: 32px;
 }
 
-.social-icon:hover path {
+.social-icon svg {
+  fill: #7e7e7e;
+}
+
+.social-icon:hover svg {
   fill: #b5b5b5;
 }
 
-.social-icon:active path {
+.social-icon:active svg {
   fill: #595959;
 }
 
@@ -803,11 +807,15 @@ body {
   justify-self: flex-end;
 }
 
-.copyright:hover path {
+.copyright svg {
+  fill: #FFC600;
+}
+
+.copyright:hover svg {
   fill: #b5931c;
 }
 
-.copyright:active path {
+.copyright:active svg {
   fill: #7e6d31;
 }
 
