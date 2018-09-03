@@ -769,12 +769,23 @@ body {
 }
 
 .footer-bottom {
+  position: relative;
   display: flex;
   width: 1160px;
   height: 43px;
   padding-bottom: 65px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 80px;
+  height: 8px;
+  background-color: #ffc600;
 }
 
 .social {
