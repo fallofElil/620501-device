@@ -146,22 +146,29 @@ body {
   opacity: 0.3;
 }
 
+.site-link svg {
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
 .login {
   padding-left: 27px;
   margin-left: auto;
-  background-image: url("../img/svg/user.svg");
 }
 
 .compare {
   padding-left: 19px;
   margin-left: 60px;
-  background-image: url("../img/svg/compare.svg");
+}
+
+.compare svg {
+  top: 11px;
 }
 
 .cart {
   padding-left: 24px;
   margin-left: 45px;
-  background-image: url("../img/svg/cart.svg");
 }
 
 .main-menu {
@@ -707,7 +714,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../img/svg/footer-sprite.svg#icon-user");
   width: 13px;
   height: 12px;
 }
@@ -717,7 +723,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../img/svg/footer-sprite.svg#icon-compare");
   width: 10px;
   height: 10px;
 }
@@ -727,7 +732,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../img/svg/footer-sprite.svg#icon-cart");
   width: 12px;
   height: 12px;
 }
