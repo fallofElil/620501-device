@@ -926,6 +926,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 30px;
+  border: none;
 }
 
 .section-title {
@@ -951,25 +953,54 @@ body {
 }
 
 .filter-form {
-  padding-left: 60px;
+  width: 202px;
   padding-right: 70px;
   margin-left: auto;
 }
 
+.filter-form label {
+  font-size: 14px;
+  line-height: 2.857em;
+}
+
 .parameter-title {
-
+  padding-top: 12px;
+  width: 201px;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.333em;
+  border-top: 2px solid #000000;
 }
 
-.color-check {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+.filter-form input {
+  display: none;
 }
 
-.bt-radio {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+.checkbox-label {
+  padding-left: 40px;
+  background-image: url("../img/svg/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.filter-form input[type="checkbox"]:checked + .checkbox-label {
+  background-image: url("../img/svg/checkbox-on.svg");
+}
+
+.radio-label {
+  padding-left: 40px;
+  background-image: url("../img/svg/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.filter-form input[type="radio"]:checked + .radio-label {
+  background-image: url("../img/svg/radio-on.svg");
+}
+
+.filter-btn {
+  border: none;
 }
 
 .goods-area {
@@ -986,6 +1017,12 @@ body {
   background-color: #efefef;;
 }
 
+.sort-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 832px;
+}
+
 .sort-title {
   padding-left: 74px;
   padding-right: 52px;
@@ -994,6 +1031,7 @@ body {
 
 .sort-attribute {
   padding-top: 2px;
+  margin-right: 30px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1008,6 +1046,33 @@ body {
 
 .active-sort:hover {
   cursor: default;
+}
+
+.switch-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 42px;
+  margin-left: auto;
+}
+
+.sort-switch-btn {
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/svg/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.down-switch {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.active-switch {
+  opacity: 1;
 }
 
 .goods {

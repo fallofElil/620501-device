@@ -59,34 +59,38 @@
           <fieldset>
             <legend class="parameter-title">Цвет</legend>
             <input type="checkbox" id="check-black" name="black" value="black" class="color-check" checked>
-            <label for="check-black">Чёрный</label>
+            <label for="check-black" class="checkbox-label">Чёрный</label>
             <input type="checkbox" id="check-white" name="white" class="color-check" value="white">
-            <label for="check-white">Белый</label>
+            <label for="check-white" class="checkbox-label">Белый</label>
             <input type="checkbox" id="check-blue" name="blue" class="color-check" value="blue" checked>
-            <label for="check-blue">Синий</label>
+            <label for="check-blue" class="checkbox-label">Синий</label>
             <input type="checkbox" id="check-red" name="red" class="color-check" value="red" checked>
-            <label for="check-red">Красный</label>
+            <label for="check-red" class="checkbox-label">Красный</label>
             <input type="checkbox" id="check-pink" name="pink" class="color-check" value="pink">
-            <label for="check-pink">Розовый</label>
+            <label for="check-pink" class="checkbox-label">Розовый</label>
           </fieldset>
           <fieldset>
             <legend class="parameter-title">Bluetooth</legend>
             <input type="radio" id="bt_on" name="bluetooth" value="on" class="bt-radio">
-            <label for="bt_on">Есть</label>
+            <label for="bt_on" class="radio-label">Есть</label>
             <input type="radio" id="bt_off" name="bluetooth" value="off" class="bt-radio">
-            <label for="bt_off">Нет</label>
+            <label for="bt_off" class="radio-label">Нет</label>
           </fieldset>
-          <button type="submit">показать</button>
+          <button class="link-btn filter-btn" type="submit">показать</button>
         </form>
       </section>
       <div class="goods-area">
         <section class="sort-goods">
-          <h2 class="section-title sort-title">сортировка:</h2>
-          <a href="#" class="sort-attribute active-sort">По цене</a>
-          <a href="#" class="sort-attribute">По типу</a>
-          <a href="#" class="sort-attribute">По популярности</a>
-          <a href="#" class="sort-switch-btn up-switch active-switch" aria-label="по возрастанию"></a>
-          <a href="#" class="sort-switch-btn down-switch" aria-label="по убыванию"></a>
+          <div class="sort-wrapper">
+            <h2 class="section-title sort-title">сортировка:</h2>
+            <a href="#" class="sort-attribute active-sort">По цене</a>
+            <a href="#" class="sort-attribute">По типу</a>
+            <a href="#" class="sort-attribute">По популярности</a>
+            <div class="switch-wrapper">
+              <a href="#" class="sort-switch-btn up-switch active-switch" aria-label="по возрастанию"></a>
+              <a href="#" class="sort-switch-btn down-switch" aria-label="по убыванию"></a>
+            </div>
+          </div>
         </section>
         <section class="goods">
           <article class="good-item">
