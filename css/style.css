@@ -130,6 +130,10 @@ body {
   border: 2px solid #000000;
 }
 
+.links-wrapper {
+  margin-left: auto;
+}
+
 .site-link {
   position: relative;
   text-decoration: none;
@@ -917,25 +921,8 @@ body {
   padding-left: 27px;
 }
 
-.logout::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 0;
-  background-image: url("../img/svg/user-footer.svg");
-  width: 13px;
-  height: 12px;
-}
-
-.logout:hover::before {
-  opacity: 0.6;
-}
-
-.logout:active::before {
-  opacity: 0.3;
-}
-
 .user-name {
+  display: inline-block;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
