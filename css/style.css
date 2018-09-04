@@ -67,16 +67,23 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-panel {
+.user-nav {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start;
   margin-left: 60px;
   margin-right: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .header-panel-form {
   display: flex;
+}
+
+.links-wrapper {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-label {
@@ -130,16 +137,10 @@ body {
   border: 2px solid #000000;
 }
 
-.links-wrapper {
-  margin-left: auto;
-}
-
 .site-link {
   position: relative;
   text-decoration: none;
   color: #000000;
-  background-repeat: no-repeat;
-  background-position: 0 center;
 }
 
 .site-link:hover {
@@ -158,12 +159,11 @@ body {
 
 .login {
   padding-left: 27px;
-  margin-left: auto;
+  margin-right: auto;
 }
 
 .compare {
   padding-left: 19px;
-  margin-left: 60px;
 }
 
 .compare svg {
@@ -172,7 +172,7 @@ body {
 
 .cart {
   padding-left: 24px;
-  margin-left: 45px;
+  margin-left: 40px;
 }
 
 .main-menu {
@@ -188,9 +188,6 @@ body {
   list-style: none;
 }
 
-.menu-item {
-  margin-right: 45px;
-}
 
 .sub-menu {
   position: relative;
@@ -209,9 +206,12 @@ body {
   opacity: 0.3;
 }
 
-.menu-item:last-child {
-  margin-left: auto;
-  margin-right: 0;
+.menu-warranty {
+  margin-left: 33px;
+}
+
+.menu-contacts {
+  margin-left: 110px;
 }
 
 .menu-link {
@@ -917,19 +917,21 @@ body {
 
 /*---Styles for Catalog page---*/
 
-.logout {
-  padding-left: 27px;
-}
-
 .user-name {
-  display: inline-block;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
+  position: relative;
   margin: 0;
+  margin-right: 20px;
+  padding-left: 25px;
+}
+
+.user-name svg {
+  position: absolute;
+  left: 0;
+  top: 9px;
 }
 
 .logout {
+  margin-right: auto;
   color: rgba(0, 0, 0, 0.3);
 }
 
