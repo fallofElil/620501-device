@@ -539,6 +539,7 @@ body {
 }
 
 .service-desc {
+
   padding-left: 120px;
   padding-right: 210px;
   padding-top: 80px;
@@ -561,13 +562,25 @@ body {
   background-position: center;
 }
 
-.service-name:hover {
+.service-tab {
+  width: 160px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.service input[type="radio"] {
+  display: none;
+}
+
+.service input[type="radio"]:checked ~ .service-tab {
   padding-right: 120px;
   background-color: #000000;
   background-image: none;
+  margin-right: auto;
+  color: #f7e184;
 }
 
-.service-name:hover .service-link {
+.service-name:checked .service-tab {
   margin-right: auto;
   color: #f7e184;
 }
@@ -584,7 +597,7 @@ body {
   top: 210px;
 }
 
-.service-link {
+.service-tab {
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;

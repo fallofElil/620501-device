@@ -167,8 +167,13 @@
       </section>
       <section class="service">
         <h2 class="visually-hidden">Наши услуги</h2>
+        <input type="radio" id="tab_delivery" name="service" value="delivery" checked>
+        <input type="radio" id="tab_warranty" name="service" value="warranty">
+        <input type="radio" id="tab_credit" name="service" value="credit">
         <dl>
-          <dt class="service-name"><a href="#" class="service-link act-srv">Доставка</a></dt>
+          <dt class="service-name">
+            <label for="tab_delivery" class="service-tab">Доставка</label>
+          </dt>
           <dd class="service-desc delivery current-service">
             <h3>Доставка</h3>
             <p>
@@ -177,7 +182,9 @@
               на ваш этаж.
             </p>
           </dd>
-          <dt class="service-name"><a href="#" class="service-link act-srv">Гарантия</a></dt>
+          <dt class="service-name">
+            <label for="tab_warranty" class="service-tab">Гарантия</label>
+          </dt>
           <dd class="service-desc warranty visually-hidden">
             <h3>Гарантия</h3>
             <p>
@@ -186,7 +193,9 @@
               конечно же.
             </p>
           </dd>
-          <dt class="service-name"><a href="#" class="service-link act-srv">Кредит</a></dt>
+          <dt class="service-name">
+            <label for="tab_credit" class="service-tab">Кредит</label>
+          </dt>
           <dd class="service-desc credit visually-hidden">
             <h3>Кредит</h3>
             <p>
