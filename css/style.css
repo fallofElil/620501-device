@@ -314,12 +314,51 @@ body {
 }
 
 .slider-title {
+  position: relative;
   width: 480px;
   height: 100px;
+  padding-top: 50px;
+  margin: 0;
+  margin-top: 20px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   font-weight: 700;
   line-height: 1.19em;
+}
+
+.slider-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 8px;
+  background-color: #ffffff;
+}
+
+.slider-title::after {
+  position: absolute;
+  font-size: 179.2px;
+  line-height: 1em;
+  color: #ffffff;
+}
+
+.slide-selfie .slider-title::after {
+  content: "01";
+  top: -44px;
+  right: -73px;
+}
+
+.slide-whatch .slider-title::after {
+  content: "02";
+  top: -44px;
+  right: -73px;
+}
+
+.slide-quadrocopt .slider-title::after {
+  content: "03";
+  top: -44px;
+  right: -73px;
 }
 
 .slider-el-description {
