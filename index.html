@@ -174,9 +174,9 @@
         <input type="radio" id="tab_credit" name="service" value="credit">
         <dl>
           <dt class="service-name">
-            <label for="tab_delivery" class="service-tab">Доставка</label>
+            <label for="tab_delivery" class="service-tab label-delivery">Доставка</label>
           </dt>
-          <dd class="service-desc delivery current-service">
+          <dd class="service-desc delivery">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -185,9 +185,9 @@
             </p>
           </dd>
           <dt class="service-name">
-            <label for="tab_warranty" class="service-tab">Гарантия</label>
+            <label for="tab_warranty" class="service-tab label-warranty">Гарантия</label>
           </dt>
-          <dd class="service-desc warranty visually-hidden">
+          <dd class="service-desc warranty">
             <h3>Гарантия</h3>
             <p>
               Если из-за возгорания купленного у нас товара у вас сгорит
@@ -196,9 +196,9 @@
             </p>
           </dd>
           <dt class="service-name">
-            <label for="tab_credit" class="service-tab">Кредит</label>
+            <label for="tab_credit" class="service-tab label-credit">Кредит</label>
           </dt>
-          <dd class="service-desc credit visually-hidden">
+          <dd class="service-desc credit">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут
@@ -257,24 +257,26 @@
     <footer class="site-footer">
       <div class="footer-top">
         <a href="index.html" class="logo">device</a>
-        <a href="#" class="site-link footer-link login">
-          <svg width="13" height="12">
-            <use xlink:href="#icon-user"></use>
-          </svg>
-          Войти
-        </a>
-        <a href="#" class="site-link footer-link compare">
-          <svg width="10" height="10">
-            <use xlink:href="#icon-compare"></use>
-          </svg>
-          Сравнить
-        </a>
-        <a href="#" class="site-link footer-link cart">
-          <svg width="12" height="12">
-            <use xlink:href="#icon-cart"></use>
-          </svg>
-          Корзина
-        </a>
+        <div class="links-wrapper">
+          <a href="#" class="site-link footer-link login">
+            <svg width="13" height="12">
+              <use xlink:href="#icon-user"></use>
+            </svg>
+            Войти
+          </a>
+          <a href="#" class="site-link footer-link compare">
+            <svg width="10" height="10">
+              <use xlink:href="#icon-compare"></use>
+            </svg>
+            Сравнить
+          </a>
+          <a href="#" class="site-link footer-link cart">
+            <svg width="12" height="12">
+              <use xlink:href="#icon-cart"></use>
+            </svg>
+            Корзина
+          </a>
+        </div>
       </div>
       <div class="footer-mid">
         <p>г. Москва, ул. Строителей, 15</p>

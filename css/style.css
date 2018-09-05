@@ -525,7 +525,7 @@ body {
 .service {
   outline: 1px solid green;
 
-  height: 390px;
+  min-height: 390px;
   margin-bottom: 100px;
   background: linear-gradient(#ffffff 0px, #ffffff 102px, #e5e5e5 102px, #e5e5e5 390px);
 }
@@ -537,20 +537,20 @@ body {
 .service dl {
   position: relative;
   width: 1160px;
-  height: 320px;
+  min-height: 320px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .service-desc {
-
+  width: 500px;
+  height: 155px;
+  display: none;
   padding-left: 120px;
   padding-right: 210px;
   padding-top: 80px;
   padding-bottom: 85px;
   margin-left: 280px;
-  width: 500px;
-  height: 155px;
   border-left: 8px solid #000000;
   background-repeat: no-repeat;
   background-position: right;
@@ -558,35 +558,36 @@ body {
 
 .service-name {
   position: absolute;
+  display: inline-block;
   width: 160px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   text-align: center;
   background-image: url("../img/svg/yellow-rect.svg");
   background-position: center;
 }
 
+.service-name:hover {
+  background-color: #f0c52e;
+}
+
 .service-tab {
-  width: 160px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
+.service-tab:hover {
+  cursor: pointer;
+}
+
+.label-delivery {
+
+}
+
+.label-warranty {
+
+}
+
 .service input[type="radio"] {
   display: none;
-}
-
-.service input[type="radio"]:checked ~ .service-tab {
-  padding-right: 120px;
-  background-color: #000000;
-  background-image: none;
-  margin-right: auto;
-  color: #f7e184;
-}
-
-.service-name:checked .service-tab {
-  margin-right: auto;
-  color: #f7e184;
 }
 
 .service-name:first-of-type {
@@ -610,6 +611,35 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+input[type="radio"]#tab_delivery:checked ~ dl .label-delivery,
+input[type="radio"]#tab_warranty:checked ~ dl .label-warranty,
+input[type="radio"]#tab_credit:checked ~ dl .label-credit {
+  background-color: #000000;
+  color: #f7e184;
+  cursor: default;
+}
+
+input[type="radio"]#tab_delivery:checked ~ dl .label-delivery {
+  padding-left: 25px;
+  padding-right: 135px;
+}
+
+input[type="radio"]#tab_warranty:checked ~ dl .label-warranty {
+  padding-left: 28px;
+  padding-right: 140px;
+}
+
+input[type="radio"]#tab_credit:checked ~ dl .label-credit {
+  padding-left: 40px;
+  padding-right: 154px;
+}
+
+#tab_delivery:checked ~ dl .delivery,
+#tab_warranty:checked ~ dl .warranty,
+#tab_credit:checked ~ dl .credit {
+  display: block;
 }
 
 .delivery {
@@ -766,8 +796,11 @@ body {
   color: rgba(255, 198, 0, 0.3);
 }
 
+.footer-top .links-wrapper {
+  width: 330px;
+}
+
 .footer-link {
-  margin-left: 45px;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1291,18 +1324,6 @@ body {
 
 .site-footer .logout {
   color: rgba(255, 255, 255, 0.3);
-}
-
-.site-footer .logout::before {
-  background-image: url("../img/svg/user-footer.svg");
-}
-
-.site-footer .logout:hover::before {
-  opacity: 0.6;
-}
-
-.site-footer .logout:active::before {
-  opacity: 0.3;
 }
 
 /*---Global modifiers---*/
