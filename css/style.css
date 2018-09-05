@@ -113,14 +113,13 @@ body {
 }
 
 .search-btn {
-  display: block;
+  display: none;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 7px;
   padding-bottom: 7px;
   background-color: #f7e296;
   border: 2px solid #000000;
-  visibility: hidden;
 }
 
 .search-field:focus {
@@ -138,7 +137,7 @@ body {
   cursor: pointer;
 }
 
-.search-btn:active {
+.search-field:focus + .search-btn:active {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
