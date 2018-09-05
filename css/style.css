@@ -429,7 +429,7 @@ body {
 .slider-switch {
   position: absolute;
   right: 100px;
-  bottom: 175px;
+  bottom: 180px;
   width: 160px;
   display: flex;
   justify-content: space-between;
@@ -438,9 +438,12 @@ body {
 }
 
 .slider-switch label {
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
   background-image: url("../img/svg/slider-button-empty.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .categories {
