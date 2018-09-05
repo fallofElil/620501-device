@@ -27,8 +27,6 @@ body {
 }
 
 .site-header {
-  outline: 1px solid chartreuse;
-
   width: 1160px;
   height: 185px;
   margin-left: auto;
@@ -41,9 +39,13 @@ body {
   padding-bottom: 115px;
 }
 
+/*.site-header {
+  outline: 1px solid chartreuse;
+}
+
 .site-header * {
   outline: 1px solid orchid;
-}
+}*/
 
 .logo {
   position: relative;
@@ -275,8 +277,6 @@ body {
 }
 
 .slider-wrapper {
-  outline: 1px solid maroon;
-
   position: relative;
   width: 1160px;
   height: 500px;
@@ -286,9 +286,13 @@ body {
   margin-bottom: 95px;
 }
 
+/*.slider-wrapper {
+  outline: 1px solid maroon;
+}
+
 .slider-wrapper * {
   outline: 1px solid darkorchid;
-}
+}*/
 
 .slider-wrapper input[type="radio"] {
   display: none;
@@ -437,7 +441,7 @@ body {
   font-size: 0px;
 }
 
-.slider-switch label {
+.slider-btn {
   width: 25px;
   height: 25px;
   background-image: url("../img/svg/slider-button-empty.svg");
@@ -526,16 +530,18 @@ body {
 }
 
 .service {
-  outline: 1px solid green;
-
   min-height: 390px;
   margin-bottom: 100px;
   background: linear-gradient(#ffffff 0px, #ffffff 102px, #e5e5e5 102px, #e5e5e5 390px);
 }
 
+/*.service {
+  outline: 1px solid green;
+}
+
 .service * {
   outline: 1px solid royalblue;
-}
+}*/
 
 .service dl {
   position: relative;
