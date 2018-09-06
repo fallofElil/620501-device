@@ -137,10 +137,15 @@ body {
   cursor: pointer;
 }
 
-.search-field:focus + .search-btn:active {
-  background-color: #000000;
+.search-field:focus,
+.search-btn:active {
+  display: block;
   color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
+}
+
+.search-field:focus {
+  color: #000000;
 }
 
 .search-field::placeholder {
