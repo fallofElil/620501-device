@@ -1397,8 +1397,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   color: #000000;
 }
 
-.site-footer .user-name {
-  color: rgba(255, 255, 255, 0.7);
+.catalog-footer .links-wrapper {
+  width: 480px;
 }
 
 .site-footer .logout {

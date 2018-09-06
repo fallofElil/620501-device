@@ -37,19 +37,18 @@
   <body>
   <header class="site-header">
     <a href="index.html" class="logo">device</a>
-
     <nav class="user-nav">
       <form method="get" action="https://echo.htmlacademy.ru/" class="header-panel-form">
         <input type="search" placeholder="Поиск по сайту" id="search-field" class="search-field" aria-label="Поиск по сайту">
         <button type="submit" class="search-btn">Найти</button>
       </form>
       <div class="links-wrapper">
-        <p class="user-name">
+        <a href="#" class="site-link user-name">
           <svg width="13" height="12">
             <use xlink:href="#icon-user"></use>
           </svg>
           Валентин Петухов
-        </p>
+        </a>
         <a href="#" class="site-link logout">Выйти</a>
         <a href="#" class="site-link compare">
           <svg width="10" height="10">
@@ -208,13 +207,30 @@
       </div>
     </div>
   </main>
-  <footer class="site-footer">
+  <footer class="site-footer catalog-footer">
     <div class="footer-top">
       <a href="index.html" class="logo">device</a>
-      <p class="user-name">Валентин Петухов</p>
-      <a href="#" class="site-link logout">Выйти</a>
-      <a href="#" class="site-link compare">Сравнить</a>
-      <a href="#" class="site-link cart">Корзина</a>
+      <div class="links-wrapper">
+        <a href="#" class="site-link footer-link user-name">
+          <svg width="13" height="12">
+            <use xlink:href="#icon-user"></use>
+          </svg>
+          Валентин Петухов
+        </a>
+        <a href="#" class="site-link logout">Выйти</a>
+        <a href="#" class="site-link footer-link compare">
+          <svg width="10" height="10">
+            <use xlink:href="#icon-compare"></use>
+          </svg>
+          Сравнить
+        </a>
+        <a href="#" class="site-link footer-link cart">
+          <svg width="12" height="12">
+            <use xlink:href="#icon-cart"></use>
+          </svg>
+          Корзина
+        </a>
+      </div>
     </div>
     <div class="footer-mid">
       <p>г. Москва, ул. Строителей, 15</p>
@@ -230,27 +246,23 @@
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <a href="https://ru-ru.facebook.com/htmlacademy/" target="_blank" class="social-icon" aria-label="Наше сообщество в Facebook">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-            <path fill="#7e7e7e" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/>
+            <use xlink:href="#icon-facebook"></use>
           </svg>
         </a>
         <a href="https://www.instagram.com/htmlacademy/" target="_blank" class="social-icon" aria-label="Наши фотоотчёты в Instagram">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-            <g fill="#7e7e7e">
-              <path d="M20.916 16a4.938 4.938 0 1 1-9.877 0c0-.394.051-.773.138-1.14h-.897v6.838h11.396V14.86h-.897c.086.367.137.746.137 1.14z"/>
-              <path d="M15.978 18.659c1.466 0 2.659-1.193 2.659-2.659s-1.193-2.659-2.659-2.659c-1.466 0-2.659 1.193-2.659 2.659s1.192 2.659 2.659 2.659zm2.659-8.357h3.039v3.039h-3.039z"/>
-              <path d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.955 21.698a2.285 2.285 0 0 1-2.279 2.279H10.279A2.285 2.285 0 0 1 8 21.698V10.302a2.286 2.286 0 0 1 2.279-2.279h11.396a2.286 2.286 0 0 1 2.279 2.279v11.396z"/>
-            </g>
+            <use xlink:href="#icon-instagram"></use>
           </svg>
         </a>
         <a href="https://twitter.com/htmlacademy_ru?lang=ru" target="_blank" class="social-icon" aria-label="Читайте наши новости в Twitter">
           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-            <path fill="#7e7e7e" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/>
+            <use xlink:href="#icon-twitter"></use>
           </svg>
         </a>
       </section>
       <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="copyright" aria-label="Записывайтесь на интенсив по вёрстке!">
         <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09">
-          <path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+          <use xlink:href="#icon-htmlac"></use>
         </svg>
       </a>
     </div>
