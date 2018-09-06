@@ -1327,6 +1327,25 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   display: block;
 }
 
+.new-item::before {
+  content: "new";
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .item-link {
   display: block;
   width: 360px;
