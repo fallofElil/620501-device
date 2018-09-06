@@ -98,9 +98,13 @@
             <legend class="param-title param-cost">Стоимость</legend>
             <div class="cost-range">
               <div class="current-range">
-                <div class="min-range-val" id="min-range" tabindex="0" aria-label="минимальная стоимость"></div>
+                <div class="min-range-val"  tabindex="0" aria-label="минимальная стоимость">
+                  <input id="min-range" name="min-price" value="0">
+                </div>
                 <label for="min-range" class="label-range label-min">от 0</label>
-                <div class="max-range-val" id="max-range" tabindex="0" aria-label="максимальная стоимость"></div>
+                <div class="max-range-val"  tabindex="0" aria-label="максимальная стоимость">
+                  <input id="max-range" name="max-price" value="5000">
+                </div>
                 <label for="max-range" class="label-range label-max">до 5000</label>
               </div>
             </div>
