@@ -1058,6 +1058,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   padding-top: 24px;
   padding-bottom: 24px;
   margin: 0;
+  margin-bottom: 70px;
   background-color: #dcdcdc;
   text-align: right;
 }
@@ -1077,7 +1078,11 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   line-height: 2.857em;
 }
 
-.parameter-title {
+.filter-form input {
+  display: none;
+}
+
+.param-title {
   padding-top: 12px;
   width: 201px;
   font-family: "Gilroy", Tahoma, sans-serif;
@@ -1087,8 +1092,69 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   border-top: 2px solid #000000;
 }
 
-.filter-form input {
-  display: none;
+.param-cost {
+  margin-bottom: 40px;
+}
+
+.cost-range {
+  width: 200px;
+  height: 2px;
+  margin-bottom: 70px;
+  background-color: #dbdbdb;
+}
+
+.current-range {
+  position: relative;
+  width: 120px;
+  height: 2px;
+  background-color: #91c92f;
+}
+
+.min-range-val,
+.max-range-val {
+  position: absolute;
+  top: -8px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/svg/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.min-range-val:active,
+.max-range-val:active {
+  top: -10px;
+  width: 25px;
+  height: 25px;
+  background-size: cover;
+}
+
+.min-range-val {
+  left: -5px;
+}
+
+.max-range-val {
+  right: 0;
+}
+
+.label-range {
+  position: absolute;
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 1.714em;
+  letter-spacing: 0;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.label-min {
+  left: 0px;
+}
+
+.label-max {
+  right: -15px;
 }
 
 .checkbox-label {
@@ -1133,8 +1199,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .sort-wrapper {
   display: flex;
-  align-items: flex-start;
-  width: 832px;
+  align-items: center;
+  width: 830px;
 }
 
 .sort-title {

@@ -96,14 +96,18 @@
         <h2 class="section-title filter-title"><span>фильтр:</span></h2>
         <form method="get" action="https://echo.htmlacademy.ru/" class="filter-form">
           <fieldset>
-            <legend class="parameter-title">Стоимость</legend>
+            <legend class="param-title param-cost">Стоимость</legend>
             <div class="cost-range">
-              <div class="min-range-val" tabindex="0" aria-label="минимальная стоимость"></div>
-              <div class="max-range-val" tabindex="0" aria-label="максимальная стоимость"></div>
+              <div class="current-range">
+                <div class="min-range-val" id="min-range" tabindex="0" aria-label="минимальная стоимость"></div>
+                <label for="min-range" class="label-range label-min">от 0</label>
+                <div class="max-range-val" id="max-range" tabindex="0" aria-label="максимальная стоимость"></div>
+                <label for="max-range" class="label-range label-max">до 5000</label>
+              </div>
             </div>
           </fieldset>
           <fieldset>
-            <legend class="parameter-title">Цвет</legend>
+            <legend class="param-title param-color">Цвет</legend>
             <input type="checkbox" id="check-black" name="black" value="black" class="color-check" checked>
             <label for="check-black" class="checkbox-label">Чёрный</label>
             <input type="checkbox" id="check-white" name="white" class="color-check" value="white">
@@ -116,7 +120,7 @@
             <label for="check-pink" class="checkbox-label">Розовый</label>
           </fieldset>
           <fieldset>
-            <legend class="parameter-title">Bluetooth</legend>
+            <legend class="param-title param-bt">Bluetooth</legend>
             <input type="radio" id="bt_on" name="bluetooth" value="on" class="bt-radio">
             <label for="bt_on" class="radio-label">Есть</label>
             <input type="radio" id="bt_off" name="bluetooth" value="off" class="bt-radio">
