@@ -969,8 +969,27 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   fill: #7e6d31;
 }
 
-.pop-up {
+.modal {
+  position: fixed;
   display: none;
+  background-color: #e5e5e5;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: rgba(255, 198, 0, 0.5);
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
 }
 
 .name-input::placeholder,
@@ -980,6 +999,16 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   font-size: 14px;
   font-weight: 400;
   color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+
+  width: 766px;
+  height: 560px;
+  margin-top: -280px;
+  margin-left: -390px;
 }
 
 /*---Styles for Catalog page---*/
@@ -1491,4 +1520,22 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
