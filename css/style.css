@@ -989,7 +989,29 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   background-color: rgba(255, 198, 0, 0.5);
   border-radius: 50%;
   border-style: none;
+  font-size: 0;
   cursor: pointer;
+  z-index: 2;
+}
+
+.close-btn::before,
+.close-btn::after {
+  position: absolute;
+  top: 28px;
+  right: 12px;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 2;
+}
+
+.close-btn::before {
+  transform: rotate(45deg);
+}
+
+.close-btn::after {
+  transform: rotate(-45deg);
 }
 
 .name-input::placeholder,
@@ -1005,10 +1027,23 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   top: 50%;
   left: 50%;
 
-  width: 766px;
+  width: 960px;
   height: 560px;
   margin-top: -280px;
   margin-left: -390px;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.modal-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /*---Styles for Catalog page---*/

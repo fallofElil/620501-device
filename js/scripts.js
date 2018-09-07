@@ -1,4 +1,4 @@
-var mapLink = document.querySelector(".btn-about-us");
+var mapLink = document.querySelector(".map-link");
 
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = document.querySelector(".close-map");
@@ -13,11 +13,11 @@ mapClose.addEventListener("click", function (evt) {
   mapPopup.classList.remove("modal-show");
 });
 
-/*window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function (evt) {
   evt.preventDefault();
   if (evt.keyCode === 27) {
     if (mapPopup.classList.contains("modal-show")) {
       mapPopup.classList.remove("modal-show");
     }
   }
-});*/
+});
