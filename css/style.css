@@ -1014,13 +1014,56 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   transform: rotate(-45deg);
 }
 
-.name-input::placeholder,
-.email-input::placeholder,
-.message-input::placeholder {
+.modal-write-us {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  width: 760px;
+  height: 400px;
+  margin-top: -280px;
+  margin-left: -390px;
+  background-color: #ffffff;
+
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+
+.write-us-form * {
+  display: block;
+}
+
+.name-wrapper,
+.email-wrapper {
+  display: inline-block;
+}
+
+.modal-write-us label {
+  font-family: "Gilroy", Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.333em;
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.name-input::placeholder,
+.email-input::placeholder,
+.message-input::placeholder {
   color: rgba(70, 70, 70, 0.4);
+}
+
+.input-wrapper label,
+.name-input,
+.email-input {
+  width: 360px;
 }
 
 .modal-map {

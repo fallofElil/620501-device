@@ -247,7 +247,7 @@
           <a href="#" class="map-link">
             <img src="img/index/map.png" alt="карта проезда" width="560" height="222">
           </a>
-          <a href="#" class="link-btn">напишите нам</a>
+          <a href="#" class="link-btn btn-write-us">напишите нам</a>
         </section>
       </section>
     </main>
@@ -310,13 +310,17 @@
         </a>
       </div>
     </footer>
-    <section class="modal modal-write-us">
+    <section class="modal modal-write-us"><!---->
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form method="get" action="https://echo.htmlacademy.ru/">
-        <label for="client-name">Ваше имя:</label>
-        <input type="text" id="client-name" name="client-name" placeholder="Имя Фамилия" class="name-input">
-        <label for="email">Ваш e-mail:</label>
-        <input type="email" id="email" name="email" placeholder="email@example.com" class="email-input">
+      <form method="get" action="https://echo.htmlacademy.ru/" class="write-us-form">
+        <div class="name-wrapper">
+          <label for="client-name">Ваше имя:</label>
+          <input type="text" id="client-name" name="client-name" placeholder="Имя Фамилия" class="name-input">
+        </div>
+        <div class="email-wrapper">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" name="email" placeholder="email@example.com" class="email-input">
+        </div>
         <label for="message">Текст письма:</label>
         <textarea name="message" id="message" placeholder="В свободной форме" class="message-input"></textarea>
         <button type="submit" class="link-btn">отправить</button>
