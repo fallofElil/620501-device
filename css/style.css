@@ -1616,10 +1616,27 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   color: #000000;
 }
 
+.nav-link:hover {
+  background-color: #d9d9d9;
+}
+
+.nav-link:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
+}
+
 .page-number {
   padding: 5px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.page-number:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.page-number:active {
+  color: #000000;
 }
 
 .page-number:nth-child(3) {
