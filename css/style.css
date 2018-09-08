@@ -348,7 +348,7 @@ body {
   padding-top: 50px;
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 14px;
+  margin-bottom: 29px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   font-weight: 700;
@@ -399,7 +399,12 @@ body {
 .slider-el-description {
   width: 500px;
   height: 50px;
+  margin: 0;
   margin-bottom: 54px;
+}
+
+.slide-selfie .slider-el-description {
+  width: 481px;
 }
 
 .btn,
@@ -457,10 +462,16 @@ body {
 
 .slider-char-table {
   text-align: left;
+  width: 500px;
+}
+
+.slider-char-table tr {
+
 }
 
 .slider-char-table td {
-  width: 160px;
+  padding-bottom: 5px;
+  padding-right: 72px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 36px;
   font-weight: 400;
@@ -468,7 +479,6 @@ body {
 }
 
 .slider-char-table th {
-  width: 160px;
   font-size: 13px;
   font-weight: 300;
   line-height: 1.5em;
@@ -581,7 +591,7 @@ body {
 
 .service {
   min-height: 390px;
-  margin-bottom: 100px;
+  margin-bottom: 95px;
   background: linear-gradient(#ffffff 0px, #ffffff 102px, #e5e5e5 102px, #e5e5e5 390px);
 }
 
@@ -721,10 +731,10 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .brands {
   display: flex;
   justify-content: space-around;
-  width: 1160px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 76px;
+  margin-bottom: 81px;
 }
 
 .brand-link img {
@@ -743,7 +753,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
+  margin-bottom: 85px;
 }
 
 .about-us,
@@ -786,11 +796,23 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   background-color: #000000;
 }
 
-.about-us p,
-.contacts p{
-  letter-spacing: 0;
+
+.info-parag {
+  width: 430px;
   margin: 0;
+  margin-bottom: 30px;
+  letter-spacing: 0;
   color: #464646;
+}
+
+.about-us .info-parag:nth-of-type(2) {
+  width: 475px;
+  margin-bottom: 50px;
+}
+
+.contacts .info-parag {
+  width: 510px;
+  margin-bottom: 40px;
 }
 
 .about-us .link-btn,
@@ -833,10 +855,11 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   padding-top: 65px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 45px;
+  margin-bottom: 34px;
 }
 
 .site-footer .logo {
+  top: 4px;
   margin: 0;
   margin-right: auto;
   color: #ffc600;
@@ -851,7 +874,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .footer-top .links-wrapper {
-  width: 330px;
+  width: 326px;
 }
 
 .footer-link {
@@ -885,7 +908,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 75px;
+  margin-bottom: 64px;
 }
 
 .footer-mid p {
@@ -905,10 +928,12 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .footer-menu {
-  width: 425px;
-  justify-self: center;
   display: flex;
   justify-content: space-between;
+  justify-self: center;
+  width: 427px;
+  padding-top: 7px;
+  padding-right: 41px;
 }
 
 .site-footer .menu-link {
@@ -931,8 +956,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   position: relative;
   display: flex;
   width: 1160px;
-  height: 43px;
-  padding-bottom: 65px;
+  padding-bottom: 56px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -940,16 +964,16 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .footer-bottom::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 13px;
   left: 0;
   width: 80px;
-  height: 8px;
+  height: 4px;
   background-color: #ffc600;
 }
 
 .social {
   margin: auto;
-  padding-left: 60px;
+  padding-left: 25px;
   display: flex;
   width: 143px;
   height: 43px;
@@ -975,6 +999,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .copyright {
   justify-self: flex-end;
+  margin-top: -2px;
 }
 
 .copyright svg {
