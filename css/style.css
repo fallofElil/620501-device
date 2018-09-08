@@ -15,6 +15,7 @@
 }
 
 body {
+  min-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   font-family: "Open Sans", Arial, sans-serif;
@@ -1020,8 +1021,6 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   top: 50%;
   left: 50%;
 
-  width: 760px;
-  height: 400px;
   margin-top: -280px;
   margin-left: -390px;
   background-color: #ffffff;
@@ -1029,15 +1028,37 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
+
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.write-us-form * {
-  display: block;
+.write-us-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 95px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
 }
 
-.name-wrapper,
-.email-wrapper {
-  display: inline-block;
+.inputs-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+  margin-bottom: 37px;
+}
+
+.inputs-wrapper label {
+  display: inline-flex;
+  width: 360px;
+}
+
+.name-input,
+.email-input {
+  width: 340px;
+  padding-bottom: 17px;
 }
 
 .modal-write-us label {
@@ -1048,10 +1069,20 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   line-height: 1.333em;
 }
 
-.modal-write-us input,
-.modal-write-us textarea {
+.name-input,
+.email-input,
+.message-input {
+  padding-left: 20px;
+  padding-top: 17px;
+  margin-top: 10px;
   border: none;
   background-color: #f2f2f2;
+}
+
+.message-input {
+  width: 740px;
+  height: 155px;
+  margin-bottom: 40px;
 }
 
 .name-input::placeholder,
@@ -1060,10 +1091,21 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   color: rgba(70, 70, 70, 0.4);
 }
 
-.input-wrapper label,
-.name-input,
-.email-input {
-  width: 360px;
+.submit-btn {
+  position: relative;
+  padding: 8px 35px;
+}
+
+.submit-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  height: 8px;
+  background-color: #f0c52e;
+  width: 100%;
+  z-index: -1;
 }
 
 .modal-map {
@@ -1074,6 +1116,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   height: 560px;
   margin-top: -280px;
   margin-left: -390px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .modal-map iframe {
