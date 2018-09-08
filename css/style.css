@@ -1004,7 +1004,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 55px;-
+  width: 55px;
   height: 55px;
   background-color: rgba(255, 198, 0, 0.5);
   border-radius: 50%;
@@ -1372,28 +1372,70 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .checkbox-label {
+  position: relative;
   padding-left: 40px;
-  background-image: url("../img/svg/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 center;
 }
 
-.filter-form input[type="checkbox"]:checked + .checkbox-label {
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/svg/checkbox-off.svg");
+}
+
+.radio-label {
+  position: relative;
+  padding-left: 40px;
+}
+
+.radio-label::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/svg/radio-off.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox-label:hover::before,
+.radio-label:hover::before {
+  opacity: 0.6;
+}
+
+.checkbox-label:active::before,
+.filter-form input[type="checkbox"]:checked + .checkbox-label::before {
+  width: 27px;
   background-image: url("../img/svg/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-form input[type="checkbox"]:checked + .checkbox-label:active::before {
+  background-image: url("../img/svg/checkbox-off.svg");
+}
+
+.filter-form input[type="checkbox"]:disabled + .checkbox-label::before,
+.filter-form input[type="radio"]:disabled + .radio-label::before {
+  opacity: 0.25;
+}
+
+.radio-label:active::before {
+  background-image: url("../img/svg/radio-on.svg");
+}
+
+.filter-form input[type="radio"]:checked .radio-label:before {
+  background-image: url("../img/svg/radio-off.svg");
 }
 
 .field-bt {
   margin-bottom: 40px;
 }
 
-.radio-label {
-  padding-left: 40px;
-  background-image: url("../img/svg/radio-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 center;
-}
-
-.filter-form input[type="radio"]:checked + .radio-label {
+.filter-form input[type="radio"]:checked + .radio-label::before {
   background-image: url("../img/svg/radio-on.svg");
 }
 
