@@ -301,7 +301,7 @@ body {
   margin-top: -100px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 95px;
+  margin-bottom: 80px;
 }
 
 /*.slider-wrapper {
@@ -348,6 +348,7 @@ body {
   padding-top: 50px;
   margin: 0;
   margin-top: 20px;
+  margin-bottom: 14px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   font-weight: 700;
@@ -449,8 +450,12 @@ body {
   z-index: -1;
 }
 
+.link-more {
+  display: block;
+  margin-bottom: 48px;
+}
+
 .slider-char-table {
-  margin-top: auto;
   text-align: left;
 }
 
@@ -508,7 +513,7 @@ body {
 .link-popular {
   position: relative;
   width: 160px;
-  padding-top: 200px;
+  padding-top: 195px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -714,12 +719,12 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .brands {
+  display: flex;
+  justify-content: space-around;
   width: 1160px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 93px;
+  margin-bottom: 76px;
 }
 
 .brand-link img {
@@ -763,6 +768,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   position: relative;
   padding-top: 55px;
   margin: 0;
+  margin-bottom: 42px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   font-weight: 700;
@@ -783,6 +789,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .about-us p,
 .contacts p{
   letter-spacing: 0;
+  margin: 0;
   color: #464646;
 }
 
@@ -1599,10 +1606,6 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .link:active {
   color: rgba(0, 0, 0, 0.2);
-}
-
-.link-btn {
-  margin-bottom: 20px;
 }
 
 .goods-page-nav {
