@@ -50,7 +50,7 @@ body {
 
 .logo {
   position: relative;
-  top: -15px;
+  top: -13px;
   display: inline-block;
   margin-left: 60px;
   margin-bottom: 15px;
@@ -1210,7 +1210,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .page-title {
   width: 1100px;
-  margin: 40px auto 30px;
+  margin: 40px auto 18px;
   padding-left: 60px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
@@ -1224,12 +1224,12 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   padding-left: 60px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 
 .crumb {
   padding-right: 20px;
-  margin-right: 20px;
+  margin-right: 18px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1258,7 +1258,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .filter {
-  width: calc(50% - 250px);
+  width: calc(50% - 253px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1286,9 +1286,9 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .filter-title {
   width: 100%;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
   background-color: #dcdcdc;
   text-align: right;
 }
@@ -1313,7 +1313,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .param-title {
-  padding-top: 12px;
+  padding-top: 10px;
   width: 201px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 18px;
@@ -1323,13 +1323,13 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .param-cost {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .cost-range {
   width: 200px;
   height: 2px;
-  margin-bottom: 70px;
+  margin-bottom: 67px;
   background-color: #dbdbdb;
 }
 
@@ -1343,10 +1343,10 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .min-range-val,
 .max-range-val {
   position: absolute;
-  top: -8px;
+  top: -10px;
   display: inline-block;
   width: 20px;
-  height: 20px;
+  height: 23px;
   background-image: url("../img/svg/filter-button.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1363,11 +1363,11 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .min-range-val {
-  left: -5px;
+  left: -6px;
 }
 
 .max-range-val {
-  right: 0;
+  right: -7px;
 }
 
 .label-range {
@@ -1384,16 +1384,16 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .label-max {
-  right: -15px;
+  right: -23px;
 }
 
 .field-color {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .param-color,
 .param-bt {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .checkbox-label {
@@ -1457,7 +1457,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .field-bt {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .filter-form input[type="radio"]:checked + .radio-label::before {
@@ -1489,8 +1489,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .sort-goods {
   display: flex;
   align-items: flex-start;
-  padding-top: 25px;
-  padding-bottom: 22px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   margin-bottom: 70px;
   background-color: #efefef;;
 }
@@ -1570,7 +1570,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left: 75px;
+  margin-left: 72px;
   width: 760px;
 }
 
@@ -1597,8 +1597,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .new-item::before {
   content: "new";
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 25px;
+  top: 28px;
   width: 60px;
   height: 60px;
   border: 2px solid rgba(0, 0, 0, 0.2);
@@ -1617,7 +1617,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   display: block;
   width: 360px;
   height: 380px;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .item-info {
@@ -1680,6 +1680,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   justify-content: space-between;
   align-items: center;
   width: 760px;
+  margin-top: -8px;
   margin-bottom: 77px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-weight: 700;
@@ -1702,8 +1703,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .nav-link,
 .page-numbers {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: 25px;
+  padding-bottom: 22px;
 }
 
 .page-numbers {
@@ -1742,9 +1743,13 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   color: #000000;
 }
 
+.page-number:nth-child(2) {
+  padding-left: 15px;
+}
+
 .page-number:nth-child(3) {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .active-page {
