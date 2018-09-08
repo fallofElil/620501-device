@@ -1356,9 +1356,9 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .min-range-val:active,
 .max-range-val:active {
-  top: -10px;
+  top: -12px;
   width: 25px;
-  height: 25px;
+  height: 28px;
   background-size: cover;
 }
 
@@ -1366,8 +1366,16 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   left: -6px;
 }
 
+.min-range-val:active {
+  left: -9px;
+}
+
 .max-range-val {
   right: -7px;
+}
+
+.max-range-val:active {
+  right: -10px;
 }
 
 .label-range {
