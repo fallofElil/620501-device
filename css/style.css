@@ -51,7 +51,7 @@ body {
 .logo {
   position: relative;
   top: -13px;
-  display: inline-block;
+  display: block;
   margin-left: 60px;
   margin-bottom: 10px;
   font-family: "Gilroy", Tahoma, sans-serif;
@@ -724,7 +724,7 @@ body {
 
 .service-name {
   position: absolute;
-  display: inline-block;
+  display: block;
   width: 160px;
   text-align: center;
   background-image: url("../img/svg/yellow-rect.svg");
