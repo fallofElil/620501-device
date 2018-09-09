@@ -1198,6 +1198,26 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   background-color: #f2f2f2;
 }
 
+.name-input:hover,
+.email-input:hover,
+.message-input:hover {
+  background-color: #eaeaea;
+}
+
+.name-input:focus,
+.email-input:focus,
+.message-input:focus {
+  background-color: #ffffff;
+  color: #000000;
+  outline: 2px solid #f7e296;
+}
+
+.name-input:invalid,
+.email-input:invalid,
+.message-input:invalid {
+  background-color: #f6dada;
+}
+
 .message-input {
   width: 740px;
   height: 155px;
