@@ -774,14 +774,41 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   margin-bottom: 81px;
 }
 
-.brand-link img {
-  opacity: 0.2;
-  filter: grayscale(1);
+.brand-link {
+  width: 260px;
+  height: 100px;
 }
 
-.brand-link img:hover {
-  opacity: 1;
-  filter: none;
+.img-dji {
+  background-image: url("../img/index/brands/dji-gray.png");
+}
+
+.img-dji:hover {
+  background-image: url("../img/index/brands/dji.png");
+}
+
+.img-sp-gadgets {
+  background-image: url("../img/index/brands/sp-gadgets-gray.png");
+}
+
+.img-sp-gadgets:hover {
+  background-image: url("../img/index/brands/sp-gadgets.png");
+}
+
+.img-gopro {
+  background-image: url("../img/index/brands/gopro-gray.png");
+}
+
+.img-gopro:hover {
+  background-image: url("../img/index/brands/gopro.png");
+}
+
+.img-vive {
+  background-image: url("../img/index/brands/vive-gray.png");
+}
+
+.img-vive:hover {
+  background-image: url("../img/index/brands/vive.png");
 }
 
 .info-wrapper {
