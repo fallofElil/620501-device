@@ -850,7 +850,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 81px;
+  margin-bottom: 89px;
 }
 
 .brand-link {
@@ -1601,7 +1601,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .max-range-val {
   position: absolute;
   top: -10px;
-  display: inline-block;
+  display: inline-flex;
   width: 20px;
   height: 23px;
   background-image: url("../img/svg/filter-button.svg");
@@ -1664,6 +1664,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .checkbox-label {
   position: relative;
   padding-left: 40px;
+  margin-top: 1px;
 }
 
 .checkbox-label::before {
