@@ -1,3 +1,25 @@
+var currentIndex = 0;
+var previousIndex = 0;
+var slides = document.getElementsByClassName("slider-element");
+var slideButtons = document.getElementsByClassName("slider-btn");
+
+
+function nextSlide(n) {
+  previousIndex = currentIndex;
+  currentIndex = n;
+  switchSlide()
+}
+
+function switchSlide() {
+  slides[previousIndex].classList.add("visually-hidden");
+  slideButtons[previousIndex].classList.remove("active-btn");
+
+  slides[currentIndex].classList.remove("visually-hidden");
+  slideButtons[currentIndex].classList.add("active-btn");
+}
+
+//popups
+
 var writeUsLink = document.querySelector(".btn-write-us");
 var writeUsPopup = document.querySelector(".modal-write-us");
 var writeUsClose = writeUsPopup.querySelector(".close-btn");

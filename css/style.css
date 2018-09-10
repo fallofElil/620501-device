@@ -595,9 +595,13 @@ body {
   background-position: center;
 }
 
-.slider-btn:active {
+.active-btn {
   background-image: url("../img/svg/slider-button.svg");
 }
+
+/*.slider-btn:active {
+  background-image: url("../img/svg/slider-button.svg");
+}*/
 
 .categories {
   display: -webkit-box;
