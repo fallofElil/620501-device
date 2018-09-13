@@ -319,7 +319,7 @@ body {
   -ms-flex-align: start;
   align-items: flex-start;
   width: 580px;
-  height: 130px;
+  min-height: 130px;
   padding-left: 60px;
   padding-right: 520px;
   padding-top: 35px;
