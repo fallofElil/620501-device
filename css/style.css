@@ -1546,11 +1546,16 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .section-title {
+  width: 200px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 70px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5em;
   letter-spacing: 0.2em;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -1579,10 +1584,6 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   line-height: 2.8em;
 }
 
-.filter-form input {
-  display: none;
-}
-
 .param-title {
   padding-top: 10px;
   width: 201px;
@@ -1609,6 +1610,10 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   width: 120px;
   height: 2px;
   background-color: #91c92f;
+}
+
+.current-range input {
+  display: none;
 }
 
 .min-range-val,
@@ -1742,6 +1747,14 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .filter-form input[type="radio"]:checked + .radio-label::before {
   background-image: url("../img/svg/radio-on.svg");
+}
+
+.color-check:focus + .checkbox-label {
+  outline: 1px solid #000000;
+}
+
+.bt-radio:focus + .radio-label {
+  outline: 1px solid #000000;
 }
 
 .filter-btn {
