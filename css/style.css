@@ -261,8 +261,8 @@ body {
 .sub-menu::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 235px;
+  top: 9px;
+  left: 230px;
   width: 16px;
   height: 16px;
   background-image: url("../img/svg/plus.svg");
@@ -712,16 +712,23 @@ body {
   margin-right: auto;
 }
 
+.service dl::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 277px;
+  width: 8px;
+  height: 320px;
+  background-color: #000000;
+}
+
 .service-desc {
   width: 500px;
   height: 155px;
   display: none;
-  padding-left: 117px;
-  padding-right: 186px;
-  padding-top: 80px;
-  padding-bottom: 85px;
+  padding: 85px 186px 90px 125px;
   margin-left: 277px;
-  border-left: 7px solid #000000;
+  /*border-left: 7px solid #000000;*/
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -740,8 +747,8 @@ body {
 }
 
 .service-tab {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 7px;
+  padding-bottom: 12px;
 }
 
 .service-tab:hover {
@@ -762,7 +769,7 @@ body {
 }
 
 .service-name:last-of-type {
-  top: 214px;
+  top: 216px;
 }
 
 .service-tab {
@@ -785,7 +792,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 input[type="radio"]#tab_delivery:checked ~ dl .label-delivery {
-  padding-left: 25px;
+  padding-left: 21px;
   padding-right: 135px;
 }
 
@@ -795,14 +802,20 @@ input[type="radio"]#tab_warranty:checked ~ dl .label-warranty {
 }
 
 input[type="radio"]#tab_credit:checked ~ dl .label-credit {
-  padding-left: 40px;
+  padding-left: 43px;
   padding-right: 154px;
+  padding-top: 10px;
+  padding-bottom: 9px;
 }
 
 #tab_delivery:checked ~ dl .delivery,
 #tab_warranty:checked ~ dl .warranty,
 #tab_credit:checked ~ dl .credit {
   display: block;
+}
+
+.label-delivery {
+  padding-left: 12px;
 }
 
 .delivery {
@@ -900,7 +913,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 85px;
+  margin-bottom: 87px;
 }
 
 .about-us,
@@ -1135,10 +1148,10 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .footer-bottom::before {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 14px;
   left: 0;
   width: 80px;
-  height: 4px;
+  height: 7px;
   background-color: #ffc600;
 }
 
