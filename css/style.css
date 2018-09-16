@@ -1468,6 +1468,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   font-size: 47px;
   font-weight: 700;
   line-height: 1em;
+  letter-spacing: 0.013em;
 }
 
 .bread-crumbs {
@@ -1575,7 +1576,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .filter-form label {
   font-size: 14px;
-  line-height: 2.857em;
+  line-height: 2.8em;
 }
 
 .filter-form input {
@@ -1999,7 +2000,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   align-items: center;
   width: 760px;
   margin-top: -8px;
-  margin-bottom: 77px;
+  margin-bottom: 80px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-weight: 700;
   line-height: 1.5em;
