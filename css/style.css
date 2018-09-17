@@ -97,6 +97,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -379,6 +380,8 @@ body {
 }
 
 .active-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1627,6 +1630,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .max-range-val {
   position: absolute;
   top: -10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   width: 20px;
   height: 23px;

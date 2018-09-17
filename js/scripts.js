@@ -1,5 +1,3 @@
-var currentIndex = 0;
-var previousIndex = 0;
 var slides = document.getElementsByClassName("slider-element");
 var slideButtons = document.getElementsByClassName("slider-btn");
 
@@ -15,20 +13,6 @@ for (var i = 0; i < slideButtons.length; i++) {
     activeBtn.classList.remove("active-btn");
     slideButtons[currentIndex].classList.add("active-btn");
   });
-}
-
-function nextSlide(n) {
-  previousIndex = currentIndex;
-  currentIndex = n;
-  switchSlide()
-}
-
-function switchSlide() {
-  slides[previousIndex].classList.add("visually-hidden");
-  slideButtons[previousIndex].classList.remove("active-btn");
-
-  slides[currentIndex].classList.remove("visually-hidden");
-  slideButtons[currentIndex].classList.add("active-btn");
 }
 
 //popups
