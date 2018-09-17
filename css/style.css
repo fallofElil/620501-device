@@ -97,6 +97,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -223,6 +224,7 @@ body {
 
 .compare {
   padding-left: 19px;
+  margin-right: 5px;
 }
 
 .compare svg {
@@ -372,8 +374,12 @@ body {
 .slider-element {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: relative;
+}
+
+.active-slide {
+  display: flex;
 }
 
 .img-wrapper {
@@ -438,6 +444,7 @@ body {
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 47px;
   font-weight: 700;
+  letter-spacing: 0.01em;
   line-height: 1.19em;
   z-index: 0;
 }
@@ -474,9 +481,8 @@ body {
 
 .slider-el-description {
   width: 500px;
-  height: 50px;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 42px;
 }
 
 .slide-selfie .slider-el-description {
@@ -593,10 +599,12 @@ body {
   background-size: 12px;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .active-btn {
   background-image: url("../img/svg/slider-button.svg");
+  cursor: default;
 }
 
 /*.slider-btn:active {
@@ -928,16 +936,15 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+  min-height: 570px;
 }
 
 .about-us {
   width: 480px;
-  height: 570px;
 }
 
 .contacts {
   width: 560px;
-  height: 570px;
 }
 
 .about-us h2,

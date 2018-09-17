@@ -3,6 +3,19 @@ var previousIndex = 0;
 var slides = document.getElementsByClassName("slider-element");
 var slideButtons = document.getElementsByClassName("slider-btn");
 
+for (var i = 0; i < slideButtons.length; i++) {
+  slideButtons[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    var activeSlide = document.querySelector(".active-slide");
+    activeSlide.classList.remove("active-slide");
+    currentIndex = this.dataset.id;
+    slides[currentIndex].classList.add("active-slide");
+
+    var activeBtn = document.querySelector(".active-btn");
+    activeBtn.classList.remove("active-btn");
+    slideButtons[currentIndex].classList.add("active-btn");
+  });
+}
 
 function nextSlide(n) {
   previousIndex = currentIndex;
