@@ -924,7 +924,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 87px;
+  margin-bottom: 83px;
 }
 
 .about-us,
@@ -994,7 +994,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .transport-list {
   padding: 0;
-  margin-bottom: 53px;
+  margin-bottom: 55px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -1018,7 +1018,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .map-link {
-  margin-bottom: 58px;
+  margin-bottom: 60px;
 }
 
 .btn-about-us,
@@ -1057,6 +1057,10 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .site-footer .logo:active {
   color: rgba(255, 198, 0, 0.3);
+}
+
+.site-footer .cart {
+  margin-left: 34px;
 }
 
 .footer-top .links-wrapper {
@@ -1559,7 +1563,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   width: 200px;
   margin: 0;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 68px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -1574,7 +1578,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   padding-top: 24px;
   padding-bottom: 22px;
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 70px;
   background-color: #dcdcdc;
   text-align: right;
 }
@@ -1584,7 +1588,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .filter-form {
-  width: 202px;
+  width: 200px;
   margin-left: auto;
   margin-right: 70px;
 }
@@ -1611,7 +1615,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 .cost-range {
   width: 200px;
   height: 2px;
-  margin-bottom: 67px;
+  margin-bottom: 68px;
   background-color: #dbdbdb;
 }
 
@@ -1754,7 +1758,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .field-bt {
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 
 .filter-form input[type="radio"]:checked + .radio-label::before {
@@ -1816,7 +1820,6 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .sort-title {
   padding-left: 74px;
-  padding-right: 52px;
   margin: 0;
 }
 
@@ -2024,8 +2027,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   -ms-flex-align: center;
   align-items: center;
   width: 760px;
-  margin-top: -8px;
-  margin-bottom: 80px;
+  margin-top: -11px;
+  margin-bottom: 78px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-weight: 700;
   line-height: 1.5em;
@@ -2051,14 +2054,14 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .back {
-  padding-left: 30px;
-  padding-right: 32px;
+  padding-left: 28px;
+  padding-right: 28px;
   margin-right: auto;
 }
 
 .forward {
-  padding-left: 35px;
-  padding-right: 30px;
+  padding-left: 32px;
+  padding-right: 26px;
   margin-left: auto;
 }
 
@@ -2073,7 +2076,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 12px;
+  padding-left: 14px;
+  margin-top: 2px;
 }
 
 .page-number {
@@ -2096,6 +2100,12 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .catalog-footer .links-wrapper {
   width: 480px;
+  margin-top: -2px;
+  margin-right: -2px;
+}
+
+.catalog-footer .cart {
+  margin-left: 36px;
 }
 
 .site-footer .logout {
