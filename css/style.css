@@ -330,24 +330,20 @@ body {
   z-index: 1;
 }
 
-.catalog-item:first-child,
-.catalog-item:nth-child(4) {
-  width: 220px;
-}
-
-.catalog-item:nth-child(6) {
-  width: 90%;
-}
-
-.catalog-item:nth-child(2),
-.catalog-item:nth-child(3),
-.catalog-item:nth-child(5) {
-  width: 180px;
-}
-
 .catalog-item {
+  width: 160px;
+  margin-right: 20px;
   padding: 0;
   line-height: 2.4em;
+}
+
+.first-column {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.last-item {
+  margin-right: 380px;
 }
 
 .slider-wrapper {
@@ -1899,7 +1895,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 
 .good-item {
   position: relative;
-  margin-bottom: 45px;
+  margin-bottom: 48px;
 }
 
 .good-item::after {
