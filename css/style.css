@@ -1754,7 +1754,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .field-bt {
-  margin-bottom: 36px;
+  margin-bottom: 33px;
 }
 
 .filter-form input[type="radio"]:checked + .radio-label::before {
@@ -1881,6 +1881,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .goods {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1890,6 +1891,7 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 72px;
+  margin-bottom: 135px;
   width: 760px;
 }
 
@@ -2013,6 +2015,8 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
 }
 
 .goods-page-nav {
+  position: absolute;
+  bottom: -55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2024,11 +2028,10 @@ input[type="radio"]#tab_credit:checked ~ dl .label-credit {
   align-items: center;
   width: 760px;
   margin-top: -11px;
-  margin-bottom: 78px;
   font-family: "Gilroy", Tahoma, sans-serif;
   font-weight: 700;
   line-height: 1.5em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
   background-color: #efefef;
 }
 
